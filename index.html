@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0F1F19">
+<title>Norke Villa — Guest Guide</title>
+<meta name="description" content="Norke Villa, Ubud — your guest guide: Wi-Fi, airport transfer, scooters, spa in your room, floating breakfast, tours and everything around Ubud. Book with the concierge on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/guide.css">
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="poster"></div>
+  <video muted loop playsinline autoplay preload="auto" aria-hidden="true"></video>
+  <div class="hero-top">
+    <a class="logo" href="#top" aria-label="Norke Villa">
+      <svg viewBox="0 0 72 72" aria-hidden="true"><path d="M36 8 L60 28 L60 60 L12 60 L12 28 Z" fill="none" stroke="#E9D3A4" stroke-width="4" stroke-linejoin="round"/><path d="M30 38 L38 46 L30 54 L22 46 Z" fill="#E9D3A4"/></svg>
+      <span>Norke Villa<small>by ByROOM</small></span></a>
+    <div class="hero-r"><a class="ig-btn" href="https://www.instagram.com/byroomindonesia/" target="_blank" rel="noopener" aria-label="Instagram @byroomindonesia"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7"/></svg></a><a class="ig-btn" href="https://byroom.world" target="_blank" rel="noopener" aria-label="byroom.world"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r=".5"/><circle cx="9" cy="6.5" r=".5"/><path d="M10 14l3-3 3 3M13 11v6"/></svg></a><div class="langs" id="langs"></div></div>
+  </div>
+  <div class="hero-in">
+    <p class="hero-k" data-i="welcome"></p>
+    <h1>Norke <em>Villa</em></h1>
+    <p class="hero-sub" id="heroSub"></p>
+    <div class="hero-cta">
+      <a class="hbtn solid" href="#needs"><span data-i="ctaExplore"></span></a>
+      <button type="button" class="hbtn ghost" data-view="stay"><svg viewBox="0 0 24 24"><path d="M3 9a15 15 0 0 1 18 0M6 12.5a10 10 0 0 1 12 0M9 16a5 5 0 0 1 6 0"/></svg>Wi-Fi</button>
+    </div>
+  </div>
+  <div class="hero-cue" aria-hidden="true"></div>
+</header>
+
+<div class="stay"><div class="stay-c" id="stayCard"></div></div>
+
+<main class="wrap">
+  <section class="sec" id="needs">
+    <div class="sec-h rv"><div><p class="k" data-i="needsK"></p><h2 data-ih="needsH"></h2></div></div>
+    <p class="lede rv" data-i="needsLede"></p>
+    <div class="bento" id="bento"></div>
+  </section>
+
+  <section class="sec" id="explore">
+    <div class="sec-h rv"><div><p class="k" data-i="chExplore"></p><h2 data-ih="exH"></h2></div><button type="button" data-view="explore"><span data-i="seeAll"></span> →</button></div>
+    <div class="rail" id="rail"></div>
+  </section>
+
+  <section class="sec" id="info">
+    <div class="sec-h rv"><div><p class="k" data-i="secKnow"></p><h2 data-ih="infoH"></h2></div></div>
+    <div class="ilist rv" id="infoList"></div>
+  </section>
+
+  <section class="sec" id="team">
+    <div class="sec-h rv"><div><p class="k" data-i="teamK"></p><h2 data-ih="teamH"></h2></div></div>
+    <div class="team rv" id="teamList"></div>
+    <div class="fb rv">
+      <a class="bad" id="fbBad" target="_blank" rel="noopener"><div class="h" data-i="rvReport"></div><div class="s" data-i="rvReportSub"></div></a>
+      <a class="good" id="fbGood" target="_blank" rel="noopener"><div class="h" data-i="rvGood"></div><div class="s" data-i="rvGoodSub"></div></a>
+    </div>
+  </section>
+</main>
+
+<footer class="ft">
+  <div class="mark">By<b>ROOM</b></div>
+  <p data-i="footerTag"></p>
+  <p><span data-i="visitUs"></span> <a class="site" href="https://byroom.world" target="_blank" rel="noopener">byroom.world</a></p>
+  <div class="ig"><a href="https://www.instagram.com/byroomindonesia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><span>@byroomindonesia</span><small>Bali</small></a><a href="https://www.instagram.com/byroommc/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><span>@byroommc</span><small>Thailand</small></a></div>
+</footer>
+
+<script src="assets/lang.js"></script>
+<script src="assets/kit.js"></script>
+<script src="assets/guide.js"></script>
+<script>
+/* ============================================================
+   ✏️  EDIT EVERYTHING HERE — CONFIG (villa, Wi-Fi, staff, services, menu, guide),
+   I18N (texts in EN/RU/ID/ZH), HUB_DATA (service-hub prices).
+   Phone format: country code + number, digits only (e.g. 6281234567890).
+   ============================================================ */
+const CONFIG = {
+  villa:{
+    name:"Norke Villa",
+    tagline:{en:"A jungle retreat in Kedewatan, Ubud",ru:"Джунгли-ретрит в Кедеватан, Убуд",id:"Retret hutan di Kedewatan, Ubud",zh:"乌布 Kedewatan 的丛林隐居地"},
+    address:"Jl. Raya Lungsiakan No.9, Kedewatan, Ubud, Gianyar, Bali 80571",
+    mapsUrl:"https://maps.app.goo.gl/AxLjCJkXE6hEFCFr9"
+  },
+  // Hero + gallery photos. These point to Bali Capital Group's Norke Villa photos.
+  // For a bulletproof live page, host your own copies and replace these URLs.
+  heroImage:"",  // hero is the live video (assets/video)
+  gallery:[
+    "https://newhomes.id/assets/cache_image/assets/cities/id/houses/bali-capital-group/jungle-vista-bali/4-1_795x500_9ea.jpg",
+    "https://newhomes.id/assets/cache_image/assets/cities/id/houses/bali-capital-group/jungle-vista-bali/4-2_795x500_9ea.jpg",
+    "https://newhomes.id/assets/cache_image/assets/cities/id/houses/bali-capital-group/jungle-vista-bali/4-3_795x500_9ea.jpg"
+  ],
+
+  // Wi-Fi is per floor. Network name and password are the same code below.
+  wifi:{ networks:[
+    { name:"Norke Villa 1", pass:"NorkeVilla25" },
+    { name:"Norke Villa 2", pass:"NorkeVilla25#" }
+  ]},
+
+  staff:{
+    concierge:   { name:"Aprilya", role:{en:"Concierge / Villa Team",ru:"Консьерж / команда виллы",id:"Concierge / Tim Vila",zh:"礼宾 / 别墅团队"}, phone:"6282339608384" },
+    housekeeping:{ name:"Housekeeping", role:{en:"Cleaning & Amenities",ru:"Уборка",id:"Kebersihan",zh:"客房清洁"}, phone:"6282339608384" },
+    support:     { name:"Villa Team", role:{en:"Any question · daily 09:00–23:00",ru:"По любому вопросу · 09:00–23:00",id:"Apa saja · 09:00–23:00",zh:"任何问题 · 每日 09:00–23:00"}, phone:"6282339608384" }
+  },
+  reviewUrl:"https://g.page/r/YOUR-GOOGLE-REVIEW-LINK",
+
+  // ---------- PAYMENT / TIPS (DANA QR embedded) ----------
+  payment:{
+    qrImage:"assets/img/pay-qr.jpg",
+    url:""   // optional card/online payment page; leave "" to hide the button
+  },
+
+  // ---------- VILLA & FACILITIES ----------
+  smartHome:[
+    { ic:"🎵", t:{en:"Apple Sound (AirPlay)",ru:"Apple Sound (AirPlay)",id:"Apple Sound (AirPlay)",zh:"Apple Sound (AirPlay)"},
+      body:{en:`<ul><li>Connect your iPhone to the villa Wi-Fi.</li><li>Open Control Center → tap the <b>AirPlay</b> icon in the music player.</li><li>Select the villa's Apple Sound speaker and play.</li></ul><p>iPhone and speaker must be on the same Wi-Fi.</p>`,
+            ru:`<ul><li>Подключите iPhone к Wi-Fi виллы.</li><li>Откройте Пункт управления → нажмите значок <b>AirPlay</b> в плеере.</li><li>Выберите колонку Apple Sound и включите музыку.</li></ul><p>iPhone и колонка должны быть в одной сети Wi-Fi.</p>`,
+            id:`<ul><li>Sambungkan iPhone ke Wi-Fi vila.</li><li>Buka Control Center → ketuk ikon <b>AirPlay</b> di pemutar musik.</li><li>Pilih speaker Apple Sound vila dan putar musik.</li></ul><p>iPhone dan speaker harus di Wi-Fi yang sama.</p>`,
+            zh:`<ul><li>将 iPhone 连接到别墅 Wi-Fi。</li><li>打开控制中心 → 点按音乐播放器中的 <b>AirPlay</b> 图标。</li><li>选择别墅 Apple Sound 音箱并播放。</li></ul><p>iPhone 与音箱须连接同一 Wi-Fi。</p>`} },
+    { ic:"🪟", t:{en:"Curtains",ru:"Шторы",id:"Tirai",zh:"窗帘"},
+      body:{en:`<ul><li><b>Touchscreen</b> panel: OPEN / CLOSE / STOP.</li><li>Or the curtain <b>remote</b>: OPEN / CLOSE / STOP.</li></ul><p>Please don't pull the curtains by hand while the motor runs.</p>`,
+            ru:`<ul><li><b>Сенсорная панель</b>: OPEN / CLOSE / STOP.</li><li>Или <b>пульт</b> для штор: OPEN / CLOSE / STOP.</li></ul><p>Не тяните шторы руками, пока работает мотор.</p>`,
+            id:`<ul><li>Panel <b>layar sentuh</b>: OPEN / CLOSE / STOP.</li><li>Atau <b>remote</b> tirai: OPEN / CLOSE / STOP.</li></ul><p>Jangan tarik tirai dengan tangan saat motor bekerja.</p>`,
+            zh:`<ul><li><b>触摸屏</b>面板：OPEN / CLOSE / STOP。</li><li>或使用窗帘<b>遥控器</b>：OPEN / CLOSE / STOP。</li></ul><p>电机运行时请勿用手拉动窗帘。</p>`} },
+    { ic:"❄️", t:{en:"Air Conditioning",ru:"Кондиционер",id:"AC (Pendingin)",zh:"空调"},
+      body:{en:`<ul><li>Wall remote — <b>green button</b> turns it on.</li><li>Best at <b>23–25°C</b>.</li><li>Please switch off when leaving.</li></ul>`,
+            ru:`<ul><li>Пульт на стене — <b>зелёная кнопка</b> включает.</li><li>Оптимально <b>23–25°C</b>.</li><li>Выключайте, когда уходите.</li></ul>`,
+            id:`<ul><li>Remote dinding — <b>tombol hijau</b> untuk menyalakan.</li><li>Ideal <b>23–25°C</b>.</li><li>Matikan saat pergi.</li></ul>`,
+            zh:`<ul><li>墙上遥控器——<b>绿色按钮</b>开机。</li><li>建议 <b>23–25°C</b>。</li><li>离开时请关闭。</li></ul>`} },
+    { ic:"💡", t:{en:"Lights",ru:"Свет",id:"Lampu",zh:"照明"},
+      body:{en:`<ul><li>Main panel by the entrance.</li><li>Bedside lamps have their own touch switch.</li><li>Balcony & terrace lights: panel by the door.</li></ul>`,
+            ru:`<ul><li>Основная панель у входа.</li><li>Прикроватные лампы — сенсорные.</li><li>Балкон и терраса — панель у двери.</li></ul>`,
+            id:`<ul><li>Panel utama dekat pintu masuk.</li><li>Lampu samping tempat tidur: sakelar sentuh.</li><li>Lampu balkon & teras: panel dekat pintu.</li></ul>`,
+            zh:`<ul><li>主开关在入口处。</li><li>床头灯为触控开关。</li><li>阳台及露台灯：门旁面板。</li></ul>`} },
+    { ic:"📺", t:{en:"Smart TV",ru:"Smart TV",id:"Smart TV",zh:"智能电视"},
+      body:{en:`<ul><li>Press <b>Home</b>, open your app.</li><li>Sign in with your own account and log out before checkout.</li></ul>`,
+            ru:`<ul><li>Нажмите <b>Home</b>, откройте приложение.</li><li>Войдите в свой аккаунт и выйдите перед выездом.</li></ul>`,
+            id:`<ul><li>Tekan <b>Home</b>, buka aplikasi.</li><li>Masuk dengan akun Anda, keluar sebelum check-out.</li></ul>`,
+            zh:`<ul><li>按 <b>Home</b> 打开应用。</li><li>用自己的账号登录，退房前请登出。</li></ul>`} },
+    { ic:"🔒", t:{en:"Safe",ru:"Сейф",id:"Brankas",zh:"保险箱"},
+      body:{en:`<ul><li>In the bedroom wardrobe.</li><li>Enter a 4-digit code, press <b>lock</b>; same code opens it.</li></ul>`,
+            ru:`<ul><li>В шкафу спальни.</li><li>Введите 4 цифры, нажмите <b>lock</b>; тот же код открывает.</li></ul>`,
+            id:`<ul><li>Di lemari kamar tidur.</li><li>Masukkan 4 digit, tekan <b>lock</b>; kode sama untuk membuka.</li></ul>`,
+            zh:`<ul><li>位于卧室衣柜内。</li><li>输入 4 位密码按 <b>lock</b>；同一密码开启。</li></ul>`} },
+    { ic:"🏊", t:{en:"Pool",ru:"Бассейн",id:"Kolam Renang",zh:"泳池"},
+      body:{en:`<ul><li>Shared pool with a jungle-view lounge, cleaned every morning.</li><li>No glass by the pool; children must be supervised.</li></ul>`,
+            ru:`<ul><li>Общий бассейн с лаунджем и видом на джунгли, чистят каждое утро.</li><li>Без стекла у воды; дети — под присмотром.</li></ul>`,
+            id:`<ul><li>Kolam bersama dengan lounge view hutan, dibersihkan setiap pagi.</li><li>Tanpa kaca di dekat kolam; awasi anak-anak.</li></ul>`,
+            zh:`<ul><li>共享泳池，配丛林景观休息区，每天早晨清洁。</li><li>池边勿用玻璃器皿，儿童须有人看护。</li></ul>`} },
+    { ic:"💻", t:{en:"Co-working & Yoga",ru:"Коворкинг и йога",id:"Co-working & Yoga",zh:"共享办公 · 瑜伽"},
+      body:{en:`On-site co-working space and a yoga spot overlooking the pool, river and greenery. Ask reception for access hours.`,
+            ru:`На территории — коворкинг и место для йоги с видом на бассейн, реку и зелень. Часы доступа уточните на ресепшн.`,
+            id:`Tersedia co-working dan area yoga menghadap kolam, sungai, dan hijau. Tanyakan jam akses ke resepsionis.`,
+            zh:`园区内设共享办公区，以及可俯瞰泳池、河流与绿意的瑜伽区。开放时间请咨询前台。`} },
+    { ic:"🧺", t:{en:"Laundry (4th floor)",ru:"Прачечная (4 этаж)",id:"Laundry (Lantai 4)",zh:"洗衣房（4楼）"},
+      body:{en:`A shared washing machine on the 4th floor, free for all guests.`,
+            ru:`Общая стиральная машина на 4-м этаже — бесплатно для всех гостей.`,
+            id:`Mesin cuci bersama di lantai 4, gratis untuk semua tamu.`,
+            zh:`4 楼设有共享洗衣机，所有住客免费使用。`} },
+    { ic:"🌄", t:{en:"Terrace (4th floor)",ru:"Терраса (4 этаж)",id:"Teras (Lantai 4)",zh:"露台（4楼）"},
+      body:{en:`A shared terrace on the 4th floor with views over the jungle and river — you can even hear the waterfall.`,
+            ru:`Общая терраса на 4-м этаже с видом на джунгли и реку — слышно даже водопад.`,
+            id:`Teras bersama di lantai 4 dengan pemandangan hutan dan sungai — bahkan terdengar air terjun.`,
+            zh:`4 楼共享露台，可眺望丛林与河流——甚至能听见瀑布声。`} },
+    { ic:"⚠️", t:{en:"Please Note",ru:"Важно",id:"Penting",zh:"请注意"},
+      body:{en:`Please don't unplug, move or reset any smart-home device. Any trouble — message the Villa Team and we'll help right away.`,
+            ru:`Пожалуйста, не отключайте, не перемещайте и не сбрасывайте устройства умного дома. Любые сложности — напишите команде виллы, поможем сразу.`,
+            id:`Mohon jangan mencabut, memindahkan, atau mereset perangkat smart home. Ada kendala — hubungi Tim Vila, kami segera bantu.`,
+            zh:`请勿拔插、移动或重置任何智能家居设备。如有问题，请联系别墅团队，我们会立即协助。`} }
+  ],
+
+  // ---------- MINIBAR (sample prices — edit) ----------
+  minibar:[
+    { n:{en:"Mineral Water (600ml)",ru:"Вода (600мл)",id:"Air Mineral (600ml)",zh:"矿泉水 (600ml)"}, p:{en:"Complimentary",ru:"Бесплатно",id:"Gratis",zh:"免费"} },
+    { n:"Soft Drinks (Coke / Sprite)", p:"25K" },
+    { n:{en:"Fresh Coconut",ru:"Кокос",id:"Kelapa Muda",zh:"椰青"}, p:"35K" },
+    { n:"Bintang Beer", p:"45K" },
+    { n:{en:"Local Juice",ru:"Сок",id:"Jus Lokal",zh:"鲜榨果汁"}, p:"35K" },
+    { n:{en:"Snacks / Chips",ru:"Снеки / Чипсы",id:"Camilan / Keripik",zh:"零食 / 薯片"}, p:"30K" },
+    { n:{en:"Chocolate Bar",ru:"Шоколад",id:"Cokelat",zh:"巧克力"}, p:"40K" }
+  ],
+
+  // ---------- SERVICES ----------
+  services:[
+    { cat:{en:"Transportation",ru:"Транспорт",id:"Transportasi",zh:"交通"}, items:[
+      { t:"Airport Transfer", p:"From IDR 300K", img:"assets/img/airport-transfer.jpg" },
+      { t:"Private Car + Driver", p:"From IDR 750K", cond:"/ 8 hours" },
+      { t:"Motorbike Rental", p:"From IDR 125K", cond:"/ day", warn:true },
+      { t:"Yamaha XMAX Scooter", p:"IDR 350K", cond:"/ day", warn:true, img:"https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Yamaha%20NMAX%20155%20Standard.jpg?width=400" } ]},
+    { cat:{en:"Tours & Activities",ru:"Туры и активности",id:"Tur & Aktivitas",zh:"游览与活动"}, items:[
+      { t:"Bali Private Tour", p:"From IDR 750K" },
+      { t:"Ayung River Rafting", p:"From IDR 450K", cond:"/ person" },
+      { t:"Nusa Penida Day Trip", p:"From IDR 1.2M", cond:"· min 2 pax" },
+      { t:"Gili Islands Trip", p:"From IDR 1.5M", cond:"· min 2 pax" },
+      { t:"Fast Boat Ticket", p:"From IDR 550K", cond:"/ person" } ]},
+    { cat:{en:"Food & Dining",ru:"Еда",id:"Makanan",zh:"餐饮"}, items:[
+      { t:"Floating Breakfast", p:"From IDR 759K", cond:"/ couple", img:"assets/img/floating-breakfast.jpg" },
+      { t:"Romantic Dinner", p:"From IDR 1.5M", cond:"/ couple" },
+      { t:"Private Chef", p:"From IDR 450K", cond:"/ person · 4 courses" },
+      { t:"BBQ Setup", p:"From IDR 950K", cond:"/ 2 pax" } ]},
+    { cat:{en:"Wellness",ru:"Велнес",id:"Wellness",zh:"养生"}, items:[
+      { t:"Home Service Massage", p:"From IDR 250K", cond:"/ person", img:"assets/img/home-service-massage.jpg" } ]},
+    { cat:{en:"Decorations",ru:"Декор",id:"Dekorasi",zh:"布置"}, items:[
+      { t:"Bed Decoration", p:"From IDR 500K" },
+      { t:"Birthday / Anniversary Decor", p:"From IDR 500K" },
+      { t:"Honeymoon / Proposal Setup", p:"From IDR 500K", img:"assets/img/honeymoon-proposal-setup.jpg" } ]},
+    { cat:{en:"Other Services",ru:"Прочее",id:"Layanan Lain",zh:"其他服务"}, items:[
+      { t:"Flower Bouquet", p:"From IDR 300K" },
+      { t:"Laundry Service", p:"IDR 30K", cond:"/ kg" },
+      { t:"Grocery / Personal Shopping", p:"On request", img:"assets/img/grocery-personal-shopping.jpg" } ]}
+  ],
+
+  // ---------- PHOTO MENU (add photo URLs → they appear) ----------
+  menu:[
+    { group:{en:"Breakfast",ru:"Завтраки",id:"Sarapan",zh:"早餐"}, items:[
+      { name:"Tropical Breakfast", emoji:"🥭", img:"assets/img/tropical-breakfast.jpg", price:"IDR 150K",
+        desc:{en:"Seasonal fruit, granola, fresh juice, coffee or tea.",ru:"Сезонные фрукты, гранола, свежий сок, кофе или чай.",id:"Buah musiman, granola, jus segar, kopi atau teh.",zh:"时令水果、格兰诺拉、鲜榨果汁、咖啡或茶。"} },
+      { name:"American Breakfast", emoji:"🍳", img:"assets/img/american-breakfast.jpg", price:"IDR 165K",
+        desc:{en:"Eggs your way, bacon, toast, sautéed veggies.",ru:"Яйца на выбор, бекон, тосты, овощи.",id:"Telur, bacon, roti panggang, sayuran.",zh:"任选蛋式、培根、吐司、时蔬。"} },
+      { name:"Balinese Breakfast", emoji:"🍚", img:"https://commons.wikimedia.org/wiki/Special:FilePath/Nasi%20goreng%20istimewa.JPG?width=800", price:"IDR 145K",
+        desc:{en:"Nasi goreng or mie goreng with egg and sambal.",ru:"Наси/ми горенг с яйцом и самбалом.",id:"Nasi/mie goreng dengan telur dan sambal.",zh:"印尼炒饭/炒面配煎蛋与参巴酱。"} } ]},
+    { group:{en:"Private Chef · Dinner",ru:"Private Chef · Ужин",id:"Private Chef · Makan Malam",zh:"私人厨师 · 晚餐"}, items:[
+      { name:"Private Chef 4-Course", emoji:"🍽️", img:"assets/img/private-chef-4-course.jpg", price:"From IDR 450K / person",
+        desc:{en:"Starter, main, dessert & a welcome drink, cooked in your villa.",ru:"Закуска, основное, десерт и приветственный напиток — у вас в апартаментах.",id:"Pembuka, utama, penutup & welcome drink, dimasak di unit Anda.",zh:"前菜、主菜、甜点及迎宾饮品，于您的居所内现做。"} },
+      { name:"BBQ Dinner Setup", emoji:"🔥", img:"https://commons.wikimedia.org/wiki/Special:FilePath/Plateau%20de%20fruits%20de%20mer%20001.jpg?width=800", price:"From IDR 950K / 2 pax",
+        desc:{en:"Grilled seafood & meats, sides, rooftop or poolside setup.",ru:"Морепродукты и мясо на гриле, гарниры, сервировка на крыше или у бассейна.",id:"Seafood & daging panggang, lauk, ditata di rooftop atau tepi kolam.",zh:"炭烤海鲜与肉类、配菜，屋顶或泳池边布置。"} } ]}
+  ],
+
+  // ---------- UBUD GUIDE (free-first near Kedewatan, then tours we arrange) ----------
+  // Photos are free-license (Wikimedia Commons, CC BY-SA). Swap for your own anytime.
+  nearby:[
+    { key:"free", places:[
+      { name:"Neka Art Museum", cost:"~IDR 100K", note:{en:"Balinese art · 2-min walk",ru:"Балийское искусство · 2 мин пешком",id:"Seni Bali · 2 mnt jalan",zh:"巴厘艺术 · 步行2分钟"}, dist:"1.2 km", maps:"https://www.google.com/maps/search/?api=1&query=Neka%20Art%20Museum%20Ubud" },
+      { name:"Ubud Palace (Puri Saren)", cost:{en:"Free",ru:"Бесплатно",id:"Gratis",zh:"免费"}, note:{en:"Royal courtyard · free dance some evenings",ru:"Дворец · вечерами бесплатные танцы",id:"Puri · tari gratis beberapa malam",zh:"王宫 · 部分夜晚有免费舞蹈"}, dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=Ubud%20Palace%20Puri%20Saren" },
+      { name:"Saraswati Temple", cost:{en:"Free",ru:"Бесплатно",id:"Gratis",zh:"免费"}, note:{en:"Lotus-pond water temple in town",ru:"Водный храм с прудом лотосов",id:"Pura air dengan kolam teratai",zh:"莲花池水神庙"}, dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=Pura%20Taman%20Saraswati%20Ubud" },
+      { name:"Ubud Art Market", cost:{en:"Free entry",ru:"Вход свободный",id:"Masuk gratis",zh:"免费入场"}, note:{en:"Crafts, textiles & souvenirs — haggle!",ru:"Ремёсла, ткани, сувениры — торгуйтесь!",id:"Kerajinan, kain & suvenir — tawar!",zh:"手工艺、织物与纪念品——可砍价！"}, dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=Ubud%20Art%20Market" },
+      { name:"Sacred Monkey Forest", cost:"~IDR 80K", note:{en:"Jungle temple sanctuary",ru:"Лесной храм с обезьянами",id:"Suaka hutan & pura",zh:"丛林寺庙圣猴保护区"}, dist:"15 min", img:"assets/img/monkey-forest.jpg", maps:"https://www.google.com/maps/search/?api=1&query=Sacred%20Monkey%20Forest%20Ubud" },
+      { name:"Tegallalang Rice Terraces", cost:{en:"Free · parking ~10K",ru:"Бесплатно · парковка ~10K",id:"Gratis · parkir ~10K",zh:"免费 · 停车约10K"}, note:{en:"Iconic emerald terraces & swings",ru:"Знаменитые изумрудные террасы и качели",id:"Terasering ikonik & ayunan",zh:"标志性梯田与网红秋千"}, dist:"25 min", img:"https://commons.wikimedia.org/wiki/Special:FilePath/Bali%20Rice%20Terrace.JPG?width=800", maps:"https://www.google.com/maps/search/?api=1&query=Tegallalang%20Rice%20Terraces" },
+      { name:"Goa Gajah (Elephant Cave)", cost:"~IDR 50K", note:{en:"Ancient cave shrine & bathing pools",ru:"Древняя пещера-святилище и купальни",id:"Gua kuno & kolam pemandian",zh:"古老洞窟神龛与沐浴池"}, dist:"20 min", maps:"https://www.google.com/maps/search/?api=1&query=Goa%20Gajah%20Ubud" } ]},
+    { key:"sunset", places:[
+      { name:"Campuhan Ridge Walk", cost:{en:"Free",ru:"Бесплатно",id:"Gratis",zh:"免费"}, note:{en:"Free jungle-ridge walk — magic at sunset",ru:"Бесплатная прогулка по хребту — волшебство на закате",id:"Jalan punggungan gratis — magis saat sunset",zh:"免费山脊步道——日落绝美"}, dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=Campuhan%20Ridge%20Walk%20Ubud" },
+      { name:"Karsa Kafe", note:{en:"Rice-field café at the ridge",ru:"Кафе среди рисовых полей у хребта",id:"Kafe sawah di punggungan",zh:"山脊稻田咖啡馆"}, dist:"15 min", maps:"https://www.google.com/maps/search/?api=1&query=Karsa%20Kafe%20Ubud" } ]},
+    { key:"wellness", places:[
+      { name:"Pyramids of Chi", cost:"From ~IDR 250K", note:{en:"Sound-healing meditation in giant pyramids",ru:"Звукотерапия-медитация в больших пирамидах",id:"Meditasi sound-healing di piramida raksasa",zh:"巨型金字塔内的声疗冥想"}, dist:"20 min", maps:"https://www.google.com/maps/search/?api=1&query=Pyramids%20of%20Chi%20Bali" },
+      { name:"The Yoga Barn", cost:"Drop-in ~IDR 180K", note:{en:"Famous Ubud yoga & wellness hub",ru:"Знаменитый йога- и велнес-центр Убуда",id:"Pusat yoga & wellness terkenal Ubud",zh:"乌布著名瑜伽与养生中心"}, dist:"14 min", maps:"https://www.google.com/maps/search/?api=1&query=The%20Yoga%20Barn%20Ubud" } ]},
+    { key:"nightlife", places:[
+      { name:"CP Lounge", note:{en:"Late-night bar, live music & dancing",ru:"Ночной бар, живая музыка и танцы",id:"Bar larut malam, musik live & dansa",zh:"深夜酒吧，现场音乐与舞池"}, dist:"13 min", maps:"https://www.google.com/maps/search/?api=1&query=CP%20Lounge%20Ubud" },
+      { name:"Laughing Buddha Bar", note:{en:"Live bands most nights",ru:"Живые группы почти каждый вечер",id:"Band live hampir tiap malam",zh:"多数夜晚有现场乐队"}, dist:"13 min", maps:"https://www.google.com/maps/search/?api=1&query=Laughing%20Buddha%20Bar%20Ubud" },
+      { name:"No Más Ubud", note:{en:"Late-night club & dancefloor",ru:"Ночной клуб и танцпол",id:"Klub malam & lantai dansa",zh:"深夜俱乐部与舞池"}, dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=No%20Mas%20Ubud" },
+      { name:"Shisha / Hookah Lounge", note:{en:"Relaxed lounge with shisha",ru:"Расслабленный лаундж с кальяном",id:"Lounge santai dengan shisha",zh:"轻松的水烟酒廊"}, dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=shisha%20hookah%20lounge%20Ubud" } ]},
+    { key:"eat", places:[
+      { name:"Koko Cafe", note:"Closest café · 13-min walk", dist:"13 min", maps:"https://www.google.com/maps/search/?api=1&query=Koko%20Cafe%20Kedewatan%20Ubud" },
+      { name:"Nasi Ayam Kedewatan Ibu Mangku", note:"Legendary local chicken rice", dist:"6 min", maps:"https://www.google.com/maps/search/?api=1&query=Nasi%20Ayam%20Kedewatan%20Ibu%20Mangku" },
+      { name:"Seniman Coffee Studio", note:"Ubud's famed specialty coffee", dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=Seniman%20Coffee%20Studio%20Ubud" },
+      { name:"Clear Cafe Ubud", note:"Popular healthy food, big menu", dist:"14 min", maps:"https://www.google.com/maps/search/?api=1&query=Clear%20Cafe%20Ubud" },
+      { name:"BRI Cheesery", note:"Artisan cheese & deli", dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=BRI%20Cheesery%20Ubud" },
+      { name:"Zest Ubud", note:"Iconic plant-based dining with a view", dist:"14 min", maps:"https://www.google.com/maps/search/?api=1&query=Zest%20Ubud" },
+      { name:"Sayuri Healing Food", note:"Raw vegan & healthy bowls", dist:"13 min", maps:"https://www.google.com/maps/search/?api=1&query=Sayuri%20Healing%20Food%20Ubud" },
+      { name:"Pison Coffee", note:"Trendy all-day café & brunch", dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=Pison%20Coffee%20Ubud" },
+      { name:"Olivio Pizza", note:"Wood-fired pizza & Italian", dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=Olivio%20Pizza%20Ubud" },
+      { name:"Locavore", note:"Ubud\u2019s celebrated tasting menus", tag:"\u2605 Michelin", dist:"12 min", maps:"https://www.google.com/maps/search/?api=1&query=Locavore%20Ubud" },
+      { name:"Mozaic", note:"French-Balinese fine dining", tag:"\u2605 Michelin", dist:"15 min", maps:"https://www.google.com/maps/search/?api=1&query=Mozaic%20Restaurant%20Ubud" } ]},
+    { key:"essentials", places:[
+      { name:"Pepito Market Kedewatan", note:"Supermarket · ~670 m", dist:"3 min", maps:"https://www.google.com/maps/search/?api=1&query=Pepito%20Market%20Kedewatan%20Ubud" },
+      { name:"Guardian / Kimia Farma Pharmacy", note:"Meds & basics, Ubud", dist:"10 min", maps:"https://www.google.com/maps/search/?api=1&query=Pharmacy%20Ubud%20Kedewatan" },
+      { name:"ATM (BCA / Mandiri)", note:"Cash withdrawal", dist:"8 min", maps:"https://www.google.com/maps/search/?api=1&query=ATM%20BCA%20Mandiri%20Ubud%20Kedewatan" } ]},
+    { key:"tours", places:[
+      { name:"Ayung River Rafting", cost:{en:"From IDR 450K / person",ru:"От IDR 450K / чел.",id:"Mulai IDR 450K / orang",zh:"每人 IDR 450K 起"}, note:{en:"Bali's best white-water — right by the villa",ru:"Лучший рафтинг Бали — прямо рядом с виллой",id:"Arung jeram terbaik — dekat vila",zh:"巴厘最佳漂流——就在别墅旁"}, img:"https://commons.wikimedia.org/wiki/Special:FilePath/Ayung%20River%20Rafting%201%2C%20Bali.jpg?width=800", book:true, maps:"https://www.google.com/maps/search/?api=1&query=Ayung%20River%20Rafting%20Kedewatan" },
+      { name:"Ubud Highlights Day Tour", cost:{en:"From IDR 750K",ru:"От IDR 750K",id:"Mulai IDR 750K",zh:"IDR 750K 起"}, note:{en:"Monkey Forest, rice terraces, temples & coffee",ru:"Лес обезьян, рисовые террасы, храмы и кофе",id:"Monkey Forest, terasering, pura & kopi",zh:"圣猴森林、梯田、寺庙与咖啡"}, img:"assets/img/ubud-tour.jpg", book:true, maps:"https://www.google.com/maps/search/?api=1&query=Ubud%20Bali" },
+      { name:"Mount Batur Sunrise Trek", cost:{en:"From IDR 850K · min 2",ru:"От IDR 850K · мин 2",id:"Mulai IDR 850K · min 2",zh:"IDR 850K 起 · 至少2人"}, note:{en:"Pre-dawn volcano hike above the clouds",ru:"Восхождение на вулкан к рассвету над облаками",id:"Trek gunung berapi sebelum fajar di atas awan",zh:"黎明前登火山，云海之上迎日出"}, book:true, maps:"https://www.google.com/maps/search/?api=1&query=Mount%20Batur%20Kintamani" },
+      { name:"Bali Swing", cost:{en:"From IDR 300K",ru:"От IDR 300K",id:"Mulai IDR 300K",zh:"IDR 300K 起"}, note:{en:"Jungle swings & nests over the valley",ru:"Качели и «гнёзда» над долиной джунглей",id:"Ayunan & sarang di atas lembah hutan",zh:"丛林山谷上的秋千与鸟巢"}, img:"https://commons.wikimedia.org/wiki/Special:FilePath/Bali%20Rice%20Terrace.JPG?width=800", book:true, maps:"https://www.google.com/maps/search/?api=1&query=Bali%20Swing%20Tegallalang" },
+      { name:"Waterfalls Tour", cost:{en:"From IDR 700K",ru:"От IDR 700K",id:"Mulai IDR 700K",zh:"IDR 700K 起"}, note:{en:"Tegenungan & hidden jungle waterfalls",ru:"Тегенунган и скрытые водопады джунглей",id:"Tegenungan & air terjun tersembunyi",zh:"Tegenungan 与隐秘丛林瀑布"}, img:"https://commons.wikimedia.org/wiki/Special:FilePath/Tegenungan%20Waterfall%20sideview.jpg?width=800", book:true, maps:"https://www.google.com/maps/search/?api=1&query=Tegenungan%20Waterfall" },
+      { name:"Nusa Penida Day Trip", cost:{en:"From IDR 1.2M · min 2",ru:"От IDR 1.2M · мин 2",id:"Mulai IDR 1.2M · min 2",zh:"IDR 1.2M 起 · 至少2人"}, note:{en:"Kelingking 'T-Rex' cliff & snorkeling",ru:"Утёс «Ти-Рекс» Келингкинг и снорклинг",id:"Tebing 'T-Rex' Kelingking & snorkeling",zh:"Kelingking「霸王龙」崖与浮潜"}, img:"https://commons.wikimedia.org/wiki/Special:FilePath/Kelingking%20Beach%20(T-Rex%20Bay)%20of%20Nusa%20Penida%2C%20Bali%20(2025)%20-%20img%2011.jpg?width=800", book:true, maps:"https://www.google.com/maps/search/?api=1&query=Nusa%20Penida" },
+      { name:"Gili Islands Trip", cost:{en:"From IDR 1.5M · min 2",ru:"От IDR 1.5M · мин 2",id:"Mulai IDR 1.5M · min 2",zh:"IDR 1.5M 起 · 至少2人"}, note:{en:"White-sand islands, snorkeling & turtles",ru:"Острова с белым песком, снорклинг и черепахи",id:"Pulau pasir putih, snorkeling & penyu",zh:"白沙岛屿、浮潜与海龟"}, img:"https://commons.wikimedia.org/wiki/Special:FilePath/Gili%20Trawangan%20(16788754758).jpg?width=800", book:true, maps:"https://www.google.com/maps/search/?api=1&query=Gili%20Islands" } ]}
+  ],
+
+  // ---------- GOOD TO KNOW ----------
+  goodToKnow:[
+    { ic:"🕛", t:{en:"Check-out & Late Check-out",ru:"Выезд и поздний выезд",id:"Check-out & Late Check-out",zh:"退房与延迟退房"},
+      body:{en:`<ul><li>Check-out at <b>12:00 noon</b>.</li><li>Need a later time or luggage storage? Just ask reception.</li></ul>`,
+            ru:`<ul><li>Выезд в <b>12:00</b>.</li><li>Нужно позже или оставить багаж? Скажите на ресепшн.</li></ul>`,
+            id:`<ul><li>Check-out pukul <b>12:00 siang</b>.</li><li>Butuh lebih lama atau titip bagasi? Hubungi resepsionis.</li></ul>`,
+            zh:`<ul><li>退房时间为 <b>中午 12:00</b>。</li><li>需延迟或寄存行李？请告知前台。</li></ul>`} },
+    { ic:"🛎️", t:{en:"24-Hour Reception",ru:"Ресепшн 24 часа",id:"Resepsionis 24 Jam",zh:"24小时前台"},
+      body:{en:`Reception and security are on site around the clock — call anytime for anything you need.`,
+            ru:`Ресепшн и охрана — круглосуточно. Звоните в любое время по любому вопросу.`,
+            id:`Resepsionis dan keamanan tersedia 24 jam — hubungi kapan saja.`,
+            zh:`前台与保安 24 小时在岗——任何需要随时联系。`} },
+    { ic:"🚰", t:{en:"Drinking Water",ru:"Питьевая вода",id:"Air Minum",zh:"饮用水"},
+      body:{en:`Tap water is <b>not</b> for drinking. Every room has its own water cooler with fresh drinking water.`,
+            ru:`Воду из-под крана <b>не</b> пить. В каждом номере есть свой кулер с питьевой водой.`,
+            id:`Air keran <b>tidak</b> untuk diminum. Setiap kamar punya dispenser air minum sendiri.`,
+            zh:`自来水 <b>不可</b> 饮用。每间客房均配有独立饮水机。`} },
+    { ic:"🚕", t:{en:"Getting Around",ru:"Как передвигаться",id:"Transportasi",zh:"出行"},
+      body:{en:`Ubud centre is ~10 min away. Grab & Gojek work here; for a private driver, tap Transportation above.`,
+            ru:`До центра Убуда ~10 мин. Grab и Gojek работают; личный водитель — в разделе «Транспорт».`,
+            id:`Pusat Ubud ~10 mnt. Grab & Gojek berfungsi; untuk sopir pribadi, lihat Transportasi di atas.`,
+            zh:`乌布中心约10分钟。Grab 与 Gojek 可用；需私人司机请见上方「交通」。`} },
+    { ic:"📋", t:{en:"House Notes",ru:"Правила дома",id:"Aturan Rumah",zh:"住宿须知"},
+      body:{en:`<ul><li>No smoking indoors (balcony is fine).</li><li>Quiet after <b>22:00</b> — neighbours are close.</li><li>Switch off AC & lights when out.</li></ul>`,
+            ru:`<ul><li>Не курить внутри (балкон — можно).</li><li>Тишина после <b>22:00</b> — соседи рядом.</li><li>Выключайте кондиционер и свет.</li></ul>`,
+            id:`<ul><li>Dilarang merokok di dalam (balkon boleh).</li><li>Tenang setelah <b>22:00</b> — tetangga dekat.</li><li>Matikan AC & lampu saat keluar.</li></ul>`,
+            zh:`<ul><li>室内禁烟（阳台可）。</li><li><b>22:00</b> 后保持安静——邻居很近。</li><li>外出请关空调与灯。</li></ul>`} }
+  ],
+
+  // ---------- USEFUL / EMERGENCY ----------
+  useful:[
+    { ic:"phone", tt:{en:"Emergency",ru:"Экстренно",id:"Darurat",zh:"紧急"}, dd:{en:"Police / Ambulance · 112",ru:"Полиция / Скорая · 112",id:"Polisi / Ambulans · 112",zh:"警察 / 急救 · 112"}, href:"tel:112" },
+    { ic:"cross", tt:{en:"Nearest Clinic",ru:"Ближайшая клиника",id:"Klinik Terdekat",zh:"最近诊所"}, dd:{en:"Toya Medika · Ubud",ru:"Toya Medika · Убуд",id:"Toya Medika · Ubud",zh:"Toya Medika · 乌布"}, href:"https://www.google.com/maps/search/?api=1&query=Toya%20Medika%20Clinic%20Ubud" },
+    { ic:"pin",   tt:{en:"Villa Location",ru:"Локация виллы",id:"Lokasi Vila",zh:"别墅位置"}, dd:{en:"Norke Villa · open Maps",ru:"Norke Villa · открыть карты",id:"Norke Villa · buka Maps",zh:"Norke Villa · 打开地图"}, href:"https://maps.app.goo.gl/AxLjCJkXE6hEFCFr9" },
+    { ic:"cart",  tt:{en:"Supermarket",ru:"Супермаркет",id:"Supermarket",zh:"超市"}, dd:{en:"Pepito Market · 3 min",ru:"Pepito Market · 3 мин",id:"Pepito Market · 3 mnt",zh:"Pepito Market · 3分钟"}, href:"https://www.google.com/maps/search/?api=1&query=Pepito%20Market%20Kedewatan%20Ubud" }
+  ],
+
+  // ---------- WILDLIFE (friendly jungle brochure) ----------
+  wildlife:[
+    { tone:"ok", ic:"🦎", t:{en:"Friendly neighbours",ru:"Дружелюбные соседи",id:"Tetangga ramah",zh:"友善的邻居"}, items:[
+      { emoji:"🦎", text:{en:"Little wall geckos ('cak-cak') eat mosquitoes — harmless, and a sign of good luck!",ru:"Мелкие гекконы («чак-чак») едят комаров — безобидны и к удаче!",id:"Cicak kecil pemakan nyamuk — tak berbahaya & pembawa keberuntungan!",zh:"小壁虎（'cak-cak'）吃蚊子——无害，还是好运的象征！"} },
+      { emoji:"🐦", text:{en:"Morning songbirds, kingfishers and giant butterflies.",ru:"Утренние певчие птицы, зимородки и огромные бабочки.",id:"Burung penyanyi pagi, raja udang & kupu-kupu besar.",zh:"晨间鸣鸟、翠鸟与大蝴蝶。"} },
+      { emoji:"🐿️", text:{en:"Squirrels and dragonflies darting around the garden.",ru:"Белки и стрекозы, снующие по саду.",id:"Tupai & capung berkeliaran di taman.",zh:"松鼠与蜻蜓在花园里穿梭。"} } ]},
+    { tone:"care", ic:"🐒", t:{en:"Look, don't touch",ru:"Смотрите, но не трогайте",id:"Lihat, jangan sentuh",zh:"可看，勿触碰"}, items:[
+      { emoji:"🐒", text:{en:"Monkeys (at Monkey Forest): don't feed or touch. Hide sunglasses, phones & snacks, and avoid eye contact.",ru:"Обезьяны (в Лесу обезьян): не кормите и не трогайте. Прячьте очки, телефон и еду, не смотрите в глаза.",id:"Monyet (di Monkey Forest): jangan beri makan/sentuh. Sembunyikan kacamata, HP & camilan, hindari kontak mata.",zh:"猴子（圣猴森林）：请勿投喂或触碰。收好墨镜、手机与零食，避免对视。"} },
+      { emoji:"🐕", text:{en:"Street dogs & cats are usually friendly — but please don't pet strays.",ru:"Уличные собаки и кошки обычно дружелюбны — но не гладьте бездомных.",id:"Anjing & kucing jalanan biasanya ramah — tapi jangan elus yang liar.",zh:"流浪狗猫通常友善——但请勿抚摸流浪动物。"} } ]},
+    { tone:"space", ic:"🐍", t:{en:"Give them space",ru:"Дайте им пространство",id:"Beri mereka ruang",zh:"请保持距离"}, items:[
+      { emoji:"🐍", text:{en:"Snakes are rare and shy, almost always harmless. Never touch — just message the villa team and we'll handle it.",ru:"Змеи редки и пугливы, почти всегда безобидны. Не трогайте — напишите команде виллы, мы разберёмся.",id:"Ular jarang & pemalu, hampir selalu tak berbahaya. Jangan sentuh — hubungi Tim Vila, kami tangani.",zh:"蛇很少见且怕人，几乎总是无害。切勿触碰——联系别墅团队，我们来处理。"} },
+      { emoji:"🐜", text:{en:"Ants, mosquitoes and the odd centipede are part of jungle life. Shake out shoes, use the repellent provided, and keep food sealed.",ru:"Муравьи, комары и иногда сороконожки — часть джунглей. Вытряхивайте обувь, пользуйтесь репеллентом, закрывайте еду.",id:"Semut, nyamuk & sesekali lipan adalah bagian hutan. Kibaskan sepatu, pakai obat nyamuk, tutup makanan.",zh:"蚂蚁、蚊子和偶尔的蜈蚣是丛林常态。穿鞋前抖一抖、使用防蚊液、密封食物。"} } ]}
+  ],
+
+  // ---------- HANDY INDONESIAN ----------
+  phrases:[
+    { id:"Halo / Selamat pagi", pron:"HA-lo / se-la-mat PA-gi", mean:{en:"Hello / Good morning",ru:"Привет / Доброе утро",id:"Halo / Selamat pagi",zh:"你好 / 早上好"} },
+    { id:"Terima kasih", pron:"te-REE-ma KA-si", mean:{en:"Thank you",ru:"Спасибо",id:"Terima kasih",zh:"谢谢"} },
+    { id:"Sama-sama", pron:"SA-ma SA-ma", mean:{en:"You\u2019re welcome",ru:"Пожалуйста",id:"Sama-sama",zh:"不客气"} },
+    { id:"Permisi", pron:"per-MI-si", mean:{en:"Excuse me",ru:"Извините",id:"Permisi",zh:"打扰一下"} },
+    { id:"Berapa harganya?", pron:"be-RA-pa har-GA-nya", mean:{en:"How much is it?",ru:"Сколько стоит?",id:"Berapa harganya?",zh:"多少钱？"} },
+    { id:"Terlalu mahal", pron:"ter-LA-lu MA-hal", mean:{en:"Too expensive",ru:"Слишком дорого",id:"Terlalu mahal",zh:"太贵了"} },
+    { id:"Enak!", pron:"E-nak", mean:{en:"Delicious!",ru:"Вкусно!",id:"Enak!",zh:"好吃！"} },
+    { id:"Di mana ...?", pron:"di MA-na", mean:{en:"Where is ...?",ru:"Где ...?",id:"Di mana ...?",zh:"……在哪里？"} },
+    { id:"Tanpa kantong plastik", pron:"TAN-pa KAN-tong PLAS-tik", mean:{en:"No plastic bag, please",ru:"Без пластикового пакета",id:"Tanpa kantong plastik",zh:"不要塑料袋"} },
+    { id:"Tolong", pron:"TO-long", mean:{en:"Help / Please",ru:"Помогите / Пожалуйста",id:"Tolong",zh:"请帮忙"} }
+  ]
+};
+
+const I18N={
+ en:{welcome:"Welcome",welcomeSub:"Everything you need for a perfect stay — in one place. Tap any section below.",managedBy:"Managed by",
+  chipWifi:"Wi-Fi",chipHome:"Facilities",chipHouse:"Housekeeping",chipServices:"Services",chipNearby:"Nearby",
+  secWifi:"Wi-Fi",secHome:"Villa & Facilities",secHouse:"Housekeeping",secMinibar:"Minibar",secServices:"Concierge Services",secMenu:"Breakfast & Private Chef",secNearby:"Around the Villa",secKnow:"Good to Know",secUseful:"Useful & Emergency",secContacts:"Your Team",secReview:"How's your stay?",secPayment:"Tips & Payment",
+  wNetwork:"Network",wPassword:"Password",wCopy:"Copy",wCopied:"Copied to clipboard",
+  hkLead:"Request a cleaning or send a note to our housekeeping team. We'll confirm your time by WhatsApp.",hkWhen:"When",hkToday:"Today",hkTomorrow:"Tomorrow",hkPref:"Preferred time",hkMorning:"Morning",hkMidday:"Midday",hkAfternoon:"Afternoon",hkAny:"Any time",hkNoteL:"Anything specific? (optional)",hkNoteP:"e.g. fresh towels, extra water, please skip the bedroom…",hkSend:"Send request to housekeeping",hkOpens:"Opens WhatsApp with your request ready to send.",
+  mbCharged:"Consumed items are charged at check-out. Prices in IDR.",
+  svIntro:"Prices “from” — final quote depends on group size, dates and preferences. Tap Book to request.",svBook:"Book",svOnReq:"On request",bikeWarn:"Always wear a helmet — police fine you, and accidents are common. Stay safe!",
+  menuIntro:"Pre-order the night before and wake up to it. Tap to request.",
+  nbIntro:"Your Ubud guide — free spots nearest you first, then trips we can arrange for you.",nbFree:"Free & Almost Free",nbTours:"Tours We Arrange",nbSunset:"Sunset Spots",nbEat:"Eat & Drink",nbEssentials:"Essentials",nbDirections:"Directions",nbArrange:"Book with us",nbWellness:"Wellness & Vibes",nbNightlife:"Nightlife",secWild:"Jungle Neighbours",wlIntro:"You're in the jungle — you'll share it with a few gentle neighbours. Here's who's who (nothing to worry about).",
+  payIntro:"Settle extra services or leave a tip for the team — quick and cashless.",payScan:"Scan with the DANA app or any QRIS-enabled bank / e-wallet.",payHint:"Tips are always optional and 100% go to the team.",payOnline:"Pay online instead",payPh:"Add your QR image in CONFIG and it will appear here.",
+  rvReport:"Something's not right?",rvReportSub:"Tell us first — we'll fix it fast, before anything else.",rvGood:"Loving it? Leave us a review ★",rvGoodSub:"A 30-second review means the world to our team.",
+  dockChat:"Chat with concierge",footerTag:"Premium villa & hotel management · Bali & Thailand",fuBtn:"Open in Google Maps",secPhrases:"Handy Indonesian",phrasesIntro:"A few words go a long way — locals love it when you try.",chStay:"Your Stay",chOrder:"Order & Pay",chExplore:"Explore Ubud",chHelp:"Good to Know",
+  waHi:"Hi! I'm a guest at {v}.",waHelp:"Hi! I'm a guest at {v}. I'd like some help, please.",waBook:"Hi! I'm a guest at {v}. I'd like to book: {x}. Please send details.",waPre:"Hi! I'm a guest at {v}. I'd like to pre-order: {x}. Please confirm.",waArrange:"Hi! I'm a guest at {v}. I'd like to arrange: {x}. Please help me book it.",waReport:"Hi, I'm staying at {v} and something needs attention:",
+  homeIntro:"Enjoy the smart features during your stay — tap any item to see how it works.",wFloorNote:"Two networks — connect to either one. Tap the password to reveal & copy.",exLead:"Enjoying Norke Villa? Check availability to extend your stay.",exBtn:"Request to extend my stay",waExtend:"Hi! I'm a guest at {v}. I'd like to check availability to extend my stay. My floor / room is: ",
+  hkReq:"Cleaning request:",hkW:"When",hkT:"Preferred time",hkN:"Note",hkThanks:"Thank you!"},
+
+ ru:{welcome:"Добро пожаловать",welcomeSub:"Всё для комфортного отдыха — в одном месте. Нажмите на нужный раздел.",managedBy:"Управление",
+  chipWifi:"Wi-Fi",chipHome:"Удобства",chipHouse:"Уборка",chipServices:"Услуги",chipNearby:"Рядом",
+  secWifi:"Wi-Fi",secHome:"Апартаменты и удобства",secHouse:"Уборка",secMinibar:"Мини-бар",secServices:"Услуги консьержа",secMenu:"Завтраки и Private Chef",secNearby:"Вокруг виллы",secKnow:"Полезно знать",secUseful:"Важное и экстренное",secContacts:"Ваша команда",secReview:"Как ваш отдых?",secPayment:"Чаевые и оплата",
+  wNetwork:"Сеть",wPassword:"Пароль",wCopy:"Копировать",wCopied:"Скопировано",
+  hkLead:"Закажите уборку или напишите команде хаускипинга. Подтвердим время в WhatsApp.",hkWhen:"Когда",hkToday:"Сегодня",hkTomorrow:"Завтра",hkPref:"Удобное время",hkMorning:"Утро",hkMidday:"День",hkAfternoon:"Вечер",hkAny:"Любое",hkNoteL:"Особые пожелания? (необязательно)",hkNoteP:"например: свежие полотенца, вода, не заходить в спальню…",hkSend:"Отправить запрос на уборку",hkOpens:"Откроется WhatsApp с готовым сообщением.",
+  mbCharged:"Использованное оплачивается при выезде. Цены в IDR.",
+  svIntro:"Цены «от» — итог зависит от числа гостей, дат и пожеланий. Нажмите «Заказать».",svBook:"Заказать",svOnReq:"По запросу",bikeWarn:"Всегда надевайте шлем — полиция штрафует, аварии часты. Берегите себя!",
+  menuIntro:"Закажите с вечера — и проснитесь к готовому. Нажмите, чтобы заказать.",
+  nbIntro:"Ваш гид по Убуду — сначала бесплатное рядом, затем туры, которые мы организуем.",nbFree:"Бесплатно и почти бесплатно",nbTours:"Туры через нас",nbSunset:"Закатные точки",nbEat:"Где поесть",nbEssentials:"Необходимое",nbDirections:"Маршрут",nbArrange:"Забронировать у нас",nbWellness:"Велнес и атмосфера",nbNightlife:"Ночная жизнь",secWild:"Соседи по джунглям",wlIntro:"Вы в джунглях — рядом будут милые соседи. Вот кто есть кто (беспокоиться не о чем).",
+  payIntro:"Оплатите доп. услуги или оставьте чаевые команде — быстро и без наличных.",payScan:"Отсканируйте приложением DANA или любым банком/e-wallet с QRIS.",payHint:"Чаевые — по желанию, 100% идут команде.",payOnline:"Оплатить онлайн",payPh:"Добавьте картинку QR в CONFIG — она появится здесь.",
+  rvReport:"Что-то не так?",rvReportSub:"Сначала напишите нам — быстро всё исправим.",rvGood:"Всё нравится? Оставьте отзыв ★",rvGoodSub:"30 секунд на отзыв — огромная поддержка для команды.",
+  dockChat:"Написать консьержу",footerTag:"Премиальное управление виллами и отелями · Бали и Таиланд",fuBtn:"Открыть в Google Maps",secPhrases:"Полезный индонезийский",phrasesIntro:"Пара слов творит чудеса — местные это ценят.",chStay:"Ваше проживание",chOrder:"Заказы и оплата",chExplore:"Открыть Убуд",chHelp:"Полезное",
+  waHi:"Здравствуйте! Я гость виллы {v}.",waHelp:"Здравствуйте! Я гость виллы {v}. Нужна помощь, пожалуйста.",waBook:"Здравствуйте! Я гость виллы {v}. Хочу забронировать: {x}. Пришлите детали, пожалуйста.",waPre:"Здравствуйте! Я гость виллы {v}. Хочу заказать заранее: {x}. Подтвердите, пожалуйста.",waArrange:"Здравствуйте! Я гость виллы {v}. Хочу организовать: {x}. Помогите с бронированием, пожалуйста.",waReport:"Здравствуйте! Я проживаю на вилле {v}, есть вопрос, требующий внимания:",
+  homeIntro:"Пользуйтесь умным домом во время отдыха — нажмите на пункт, чтобы увидеть инструкцию.",wFloorNote:"Две сети — подключайтесь к любой. Нажмите на пароль, чтобы показать и скопировать.",exLead:"Нравится в Norke Villa? Проверим возможность продлить проживание.",exBtn:"Запросить продление проживания",waExtend:"Здравствуйте! Я гость виллы {v}. Хочу узнать про продление проживания. Мой этаж / номер: ",
+  hkReq:"Запрос на уборку:",hkW:"Когда",hkT:"Удобное время",hkN:"Комментарий",hkThanks:"Спасибо!"},
+
+ id:{welcome:"Selamat Datang",welcomeSub:"Semua yang Anda butuhkan untuk menginap sempurna — dalam satu tempat. Ketuk bagian mana pun.",managedBy:"Dikelola oleh",
+  chipWifi:"Wi-Fi",chipHome:"Fasilitas",chipHouse:"Kebersihan",chipServices:"Layanan",chipNearby:"Sekitar",
+  secWifi:"Wi-Fi",secHome:"Unit & Fasilitas",secHouse:"Kebersihan Kamar",secMinibar:"Minibar",secServices:"Layanan Concierge",secMenu:"Sarapan & Private Chef",secNearby:"Sekitar Vila",secKnow:"Info Penting",secUseful:"Darurat & Penting",secContacts:"Tim Anda",secReview:"Bagaimana menginap Anda?",secPayment:"Tip & Pembayaran",
+  wNetwork:"Jaringan",wPassword:"Kata Sandi",wCopy:"Salin",wCopied:"Tersalin",
+  hkLead:"Minta pembersihan atau kirim pesan ke tim kebersihan kami. Kami konfirmasi via WhatsApp.",hkWhen:"Kapan",hkToday:"Hari ini",hkTomorrow:"Besok",hkPref:"Waktu yang diinginkan",hkMorning:"Pagi",hkMidday:"Siang",hkAfternoon:"Sore",hkAny:"Kapan saja",hkNoteL:"Ada permintaan khusus? (opsional)",hkNoteP:"mis. handuk baru, air tambahan, lewati kamar tidur…",hkSend:"Kirim permintaan kebersihan",hkOpens:"Membuka WhatsApp dengan pesan siap kirim.",
+  mbCharged:"Item yang dikonsumsi ditagih saat check-out. Harga dalam IDR.",
+  svIntro:"Harga “mulai dari” — tergantung jumlah tamu, tanggal, dan preferensi. Ketuk Pesan.",svBook:"Pesan",svOnReq:"Sesuai permintaan",bikeWarn:"Selalu pakai helm — polisi menilang, dan kecelakaan sering terjadi. Jaga diri!",
+  menuIntro:"Pesan malam sebelumnya — bangun langsung tersedia. Ketuk untuk memesan.",
+  nbIntro:"Panduan Ubud Anda — yang gratis & dekat dulu, lalu tur yang bisa kami aturkan.",nbFree:"Gratis & Hampir Gratis",nbTours:"Tur lewat Kami",nbSunset:"Spot Sunset",nbEat:"Makan & Minum",nbEssentials:"Kebutuhan",nbDirections:"Rute",nbArrange:"Pesan lewat kami",nbWellness:"Wellness & Suasana",nbNightlife:"Hiburan Malam",secWild:"Tetangga Hutan",wlIntro:"Anda di hutan — ada beberapa tetangga jinak. Ini panduannya (tak perlu khawatir).",
+  payIntro:"Bayar layanan tambahan atau beri tip untuk tim — cepat dan tanpa tunai.",payScan:"Pindai dengan aplikasi DANA atau bank / e-wallet apa pun ber-QRIS.",payHint:"Tip bersifat opsional dan 100% untuk tim.",payOnline:"Bayar online",payPh:"Tambahkan gambar QR di CONFIG dan akan muncul di sini.",
+  rvReport:"Ada yang kurang?",rvReportSub:"Beri tahu kami dulu — kami perbaiki segera.",rvGood:"Suka menginap? Beri ulasan ★",rvGoodSub:"Ulasan 30 detik sangat berarti bagi tim kami.",
+  dockChat:"Chat dengan concierge",footerTag:"Manajemen vila & hotel premium · Bali & Thailand",fuBtn:"Buka di Google Maps",secPhrases:"Frasa Indonesia",phrasesIntro:"Beberapa kata sangat membantu — warga lokal senang jika Anda mencoba.",chStay:"Menginap Anda",chOrder:"Pesan & Bayar",chExplore:"Jelajahi Ubud",chHelp:"Info Penting",
+  waHi:"Halo! Saya tamu di {v}.",waHelp:"Halo! Saya tamu di {v}. Saya butuh bantuan.",waBook:"Halo! Saya tamu di {v}. Saya ingin memesan: {x}. Mohon kirim detailnya.",waPre:"Halo! Saya tamu di {v}. Saya ingin pesan lebih awal: {x}. Mohon konfirmasi.",waArrange:"Halo! Saya tamu di {v}. Saya ingin mengatur: {x}. Tolong bantu pesankan.",waReport:"Halo, saya menginap di {v} dan ada hal yang perlu diperhatikan:",
+  homeIntro:"Nikmati fitur smart home selama menginap — ketuk item untuk melihat caranya.",wFloorNote:"Dua jaringan — sambungkan ke salah satunya. Ketuk kata sandi untuk melihat & menyalin.",exLead:"Betah di Norke Villa? Cek ketersediaan untuk memperpanjang menginap.",exBtn:"Minta perpanjang menginap",waExtend:"Halo! Saya tamu di {v}. Saya ingin cek ketersediaan untuk perpanjang menginap. Lantai / kamar saya: ",
+  hkReq:"Permintaan kebersihan:",hkW:"Kapan",hkT:"Waktu",hkN:"Catatan",hkThanks:"Terima kasih!"},
+
+ zh:{welcome:"欢迎光临",welcomeSub:"入住所需的一切，尽在此处。点按下方任一版块。",managedBy:"管理方",
+  chipWifi:"Wi-Fi",chipHome:"设施",chipHouse:"客房清洁",chipServices:"服务",chipNearby:"周边",
+  secWifi:"Wi-Fi",secHome:"居所与设施",secHouse:"客房清洁",secMinibar:"迷你吧",secServices:"礼宾服务",secMenu:"早餐与私人厨师",secNearby:"别墅周边",secKnow:"温馨提示",secUseful:"实用与紧急",secContacts:"您的团队",secReview:"入住体验如何？",secPayment:"小费与付款",
+  wNetwork:"网络",wPassword:"密码",wCopy:"复制",wCopied:"已复制",
+  hkLead:"预约清洁或给我们的客房团队留言，我们将通过 WhatsApp 确认时间。",hkWhen:"时间",hkToday:"今天",hkTomorrow:"明天",hkPref:"期望时段",hkMorning:"上午",hkMidday:"中午",hkAfternoon:"下午",hkAny:"任意时间",hkNoteL:"有特别需求吗？（可选）",hkNoteP:"例如：更换毛巾、加瓶装水、请勿进入卧室…",hkSend:"发送清洁请求",hkOpens:"将打开 WhatsApp，消息已备好待发送。",
+  mbCharged:"消费项目将在退房时结算。价格以印尼盾 (IDR) 计。",
+  svIntro:"价格为“起价”，最终报价视人数、日期与需求而定。点按“预订”。",svBook:"预订",svOnReq:"按需报价",bikeWarn:"务必佩戴头盔——警察会罚款，事故也常见。注意安全！",
+  menuIntro:"前一晚预订，醒来即享。点按即可预订。",
+  nbIntro:"您的乌布指南——先是就近的免费景点，再是我们可代订的行程。",nbFree:"免费与超值",nbTours:"我们代订的行程",nbSunset:"日落观赏点",nbEat:"餐饮推荐",nbEssentials:"便利设施",nbDirections:"路线",nbArrange:"由我们代订",nbWellness:"养生与氛围",nbNightlife:"夜生活",secWild:"丛林邻居",wlIntro:"您身处丛林——会有一些温和的邻居。这是它们的小介绍（无需担心）。",
+  payIntro:"支付附加服务或给团队小费——快捷、无现金。",payScan:"用 DANA App 或任意支持 QRIS 的银行 / 电子钱包扫码。",payHint:"小费完全自愿，100% 归团队所有。",payOnline:"在线支付",payPh:"在 CONFIG 中添加 QR 图片，即会显示于此。",
+  rvReport:"有不满意的地方？",rvReportSub:"请先告诉我们，我们会尽快解决。",rvGood:"住得开心？给我们评价 ★",rvGoodSub:"30 秒的评价对我们团队意义重大。",
+  dockChat:"联系礼宾",footerTag:"高端别墅与酒店管理 · 巴厘岛与泰国",fuBtn:"在 Google 地图打开",secPhrases:"实用印尼语",phrasesIntro:"会几句当地话很加分——当地人很欢迎你尝试。",chStay:"您的入住",chOrder:"预订与付款",chExplore:"探索乌布",chHelp:"实用信息",
+  waHi:"您好！我是 {v} 的住客。",waHelp:"您好！我是 {v} 的住客，需要一些帮助。",waBook:"您好！我是 {v} 的住客，我想预订：{x}。请发送详情。",waPre:"您好！我是 {v} 的住客，我想提前预订：{x}。请确认。",waArrange:"您好！我是 {v} 的住客，我想安排：{x}。请帮我预订。",waReport:"您好，我住在 {v}，有一件事需要处理：",
+  homeIntro:"入住期间尽享智能设施——点按任一项查看使用方法。",wFloorNote:"两个网络，连接任意一个即可。点按密码即可显示并复制。",exLead:"在 Norke Villa 住得开心？查询延长住宿的空房。",exBtn:"申请延长住宿",waExtend:"您好！我是 {v} 的住客，想查询延长住宿的空房。我的楼层 / 房号：",
+  hkReq:"清洁请求：",hkW:"时间",hkT:"期望时段",hkN:"备注",hkThanks:"谢谢！"}
+};
+
+/* ============================================================
+   ✏️  SERVICE HUB — prices (IDR) and texts. Added 2026-11.
+   ============================================================ */
+const HUB_DATA = {
+  transfer:550000,                         // per car, one way, airport <-> Norke Villa
+  carHour:200000, carMinHours:2,            // car with driver
+  scooters:[
+    { id:"fazzio", name:"Yamaha Fazzio", cc:125, price:150000, img:"jv_fazzio",
+      feats:{en:["Easy to ride","Spacious storage","City & short trips"],ru:["Лёгкий в управлении","Вместительный багажник","Для города и коротких поездок"],id:["Mudah dikendarai","Bagasi luas","Kota & perjalanan singkat"],zh:["易于驾驶","储物空间大","适合市区短途"]} },
+    { id:"nmax", name:"Yamaha NMAX", cc:150, price:200000, img:"jv_nmax",
+      feats:{en:["Comfortable & powerful","Spacious storage","Longer trips around Bali"],ru:["Мощный и комфортный","Вместительный багажник","Для дальних поездок по Бали"],id:["Nyaman & bertenaga","Bagasi luas","Perjalanan jauh keliling Bali"],zh:["舒适有力","储物空间大","适合环岛长途"]} }
+  ],
+  spa:[ // [minutes, price]
+    { id:"balinese", ic:"lotus", n:{en:"Balinese Massage",ru:"Балийский массаж",id:"Pijat Bali",zh:"巴厘岛按摩"}, o:[[60,250000],[90,375000],[120,500000]] },
+    { id:"aroma", ic:"drop", n:{en:"Aromatherapy Massage",ru:"Аромамассаж",id:"Pijat Aromaterapi",zh:"芳香按摩"}, o:[[60,260000],[90,385000]] },
+    { id:"lomi", ic:"wave", n:{en:"Lomi Lomi Massage",ru:"Ломи-ломи",id:"Pijat Lomi Lomi",zh:"夏威夷 Lomi Lomi 按摩"}, o:[[60,280000],[90,420000]] },
+    { id:"shiatsu", ic:"hand", n:{en:"Holistic Shiatsu",ru:"Холистический шиацу",id:"Shiatsu Holistik",zh:"整体指压按摩"}, o:[[60,300000],[90,450000]] },
+    { id:"stone", ic:"stone", n:{en:"Warm Stone Massage",ru:"Массаж горячими камнями",id:"Pijat Batu Hangat",zh:"热石按摩"}, o:[[60,380000],[90,570000],[120,760000]] },
+    { id:"fourhand", ic:"hands", n:{en:"Four-Hand Massage",ru:"Массаж в четыре руки",id:"Pijat Empat Tangan",zh:"四手按摩"}, o:[[60,360000],[90,540000]] },
+    { id:"lymph", ic:"leaf", n:{en:"Lymphatic Massage",ru:"Лимфодренажный массаж",id:"Pijat Limfatik",zh:"淋巴按摩"}, o:[[60,450000],[90,675000]] },
+    { id:"thai", ic:"lotus", n:{en:"Thai Massage",ru:"Тайский массаж",id:"Pijat Thai",zh:"泰式按摩"}, o:[[60,350000],[90,525000]] },
+    { id:"foot", ic:"foot", n:{en:"Foot Massage",ru:"Массаж стоп",id:"Pijat Kaki",zh:"足部按摩"}, o:[[60,230000],[90,350000]] },
+    { id:"back", ic:"hand", n:{en:"Back Massage",ru:"Массаж спины",id:"Pijat Punggung",zh:"背部按摩"}, o:[[60,220000]] },
+    { id:"pregnancy", ic:"heart", n:{en:"Pregnancy Massage",ru:"Массаж для беременных",id:"Pijat Kehamilan",zh:"孕妇按摩"}, o:[[60,230000]] },
+    { id:"facial", ic:"face", n:{en:"Facial Massage",ru:"Массаж лица",id:"Pijat Wajah",zh:"面部按摩"}, o:[[45,250000]] },
+    { id:"scrub", ic:"bowl", n:{en:"Massage + Body Scrub",ru:"Массаж + скраб",id:"Pijat + Lulur",zh:"按摩 + 身体磨砂"}, o:[[90,325000]] },
+    { id:"glow", ic:"candle", n:{en:"Massage + Sea Salt Glow + Ear Candle",ru:"Массаж + солевой пилинг + ушные свечи",id:"Pijat + Sea Salt Glow + Ear Candle",zh:"按摩 + 海盐焕肤 + 耳烛"}, o:[[105,475000]] }
+  ],
+  nails:[
+    { id:"pedimani", n:{en:"Pedicure / Manicure · 60 min",ru:"Педикюр / маникюр · 60 мин",id:"Pedikur / Manikur · 60 mnt",zh:"修脚 / 修甲 · 60 分钟"}, p:235000 },
+    { id:"pedigel", n:{en:"Pedicure Gel Complete",ru:"Педикюр с гель-лаком",id:"Pedikur Gel Lengkap",zh:"凝胶修脚全套"}, p:350000 },
+    { id:"manigel", n:{en:"Manicure Gel Complete",ru:"Маникюр с гель-лаком",id:"Manikur Gel Lengkap",zh:"凝胶修甲全套"}, p:325000 },
+    { id:"remove", n:{en:"Gel Removal",ru:"Снятие гель-лака",id:"Hapus Gel",zh:"卸除凝胶"}, p:135000 },
+    { id:"pedipol", n:{en:"Pedicure Polish",ru:"Педикюр с покрытием",id:"Pedikur Polish",zh:"修脚上色"}, p:300000 },
+    { id:"manipol", n:{en:"Manicure Polish",ru:"Маникюр с покрытием",id:"Manikur Polish",zh:"修甲上色"}, p:280000 },
+    { id:"flower", n:{en:"Flower Bath after Massage",ru:"Цветочная ванна после массажа",id:"Mandi Bunga setelah Pijat",zh:"按摩后花瓣浴"}, p:185000 }
+  ],
+  breakfast:{ price:759000, menu:[
+    { img:"bf_classic", n:"Classic Breakfast", d:{en:"Eggs your style, bacon, sausage, grilled tomato, salad and toast.",ru:"Яйца на выбор, бекон, колбаски, томат-гриль, салат и тосты.",id:"Telur sesuai selera, bacon, sosis, tomat panggang, salad & roti.",zh:"任选蛋式、培根、香肠、烤番茄、沙拉与吐司。"} },
+    { img:"bf_avocado", n:"Avocado Toast", d:{en:"Toasted bread, fresh avocado, poached eggs, cherry tomato and salad.",ru:"Тост, свежий авокадо, яйца пашот, черри и салат.",id:"Roti panggang, alpukat segar, telur rebus, tomat ceri & salad.",zh:"吐司、新鲜牛油果、水波蛋、樱桃番茄与沙拉。"} },
+    { img:"bf_pancakes", n:"Pancakes", d:{en:"Fluffy pancakes with banana, seasonal fruit and local honey or maple syrup.",ru:"Пышные панкейки с бананом, фруктами и местным мёдом или кленовым сиропом.",id:"Pancake lembut dengan pisang, buah musiman & madu lokal atau maple.",zh:"松软煎饼配香蕉、时令水果及本地蜂蜜或枫糖浆。"} },
+    { img:"bf_fruit", n:"Tropical Fruit Plate", d:{en:"Fresh seasonal fruits from Bali.",ru:"Свежие сезонные фрукты Бали.",id:"Buah musiman segar dari Bali.",zh:"巴厘岛新鲜时令水果。"} },
+    { img:"bf_smoothie", n:"Smoothie Bowl", d:{en:"Tropical fruits, granola, banana, chia seeds and local honey.",ru:"Тропические фрукты, гранола, банан, чиа и местный мёд.",id:"Buah tropis, granola, pisang, chia & madu lokal.",zh:"热带水果、格兰诺拉、香蕉、奇亚籽与本地蜂蜜。"} },
+    { img:"bf_drinks", n:"Beverages", d:{en:"Fresh orange or tropical juice, Balinese coffee or tea.",ru:"Свежевыжатый апельсиновый или тропический сок, балийский кофе или чай.",id:"Jus jeruk atau tropis segar, kopi Bali atau teh.",zh:"鲜榨橙汁或热带果汁、巴厘咖啡或茶。"} }
+  ]}
+};
+
+const HUB_I18N = {
+ en:{ heroBig:"Your jungle stay, <em>all in one place.</em>", pills:["Wi-Fi in one tap","Airport transfer","Spa in your room","Concierge on WhatsApp"], scrollCue:"Scroll",
+  svIntro2:"Tap “Add” on anything you like — then send the whole list to the concierge in one WhatsApp message.",
+  tTransfer:"Transfer", tScooter:"Scooters", tCar:"Car & tours", tSpa:"Spa", tBreakfast:"Breakfast", tMore:"More",
+  trK:"Airport transfer", trH:"Land, smile, ride.", trP:"Straight from Ngurah Rai to Norke Villa. Your driver meets you at arrivals and helps with the luggage.", perCarOW:"per car · one way", trDrive:"± 1.5–2 hours",
+  trPerks:[["car","Private transfer, direct to your door"],["bag","Spacious, fits your luggage"],["user","Friendly local driver"],["shield","Safe, hassle-free arrival"]],
+  trDir:[["arr","To Norke Villa"],["dep","To the airport"],["both","Both ways"]], trAddL:"Add transfer", trVehicle:"Toyota Xenia / Toyota Rush or similar, air-conditioned.",
+  fDate:"Date", fTime:"Time", fFlight:"Flight no.", fGuests:"Guests", orSimilar:"or similar",
+  scH:"Scooter rental", perDayL:"price per day", scP:"Explore Ubud freely, at your own pace. Helmet included, bikes are regularly serviced.", scDays:"Rental days", scDaysS:"prices update below", dayU:"day|days",
+  scPerks:[["helmet","Helmet included"],["tool","Regularly serviced"],["shield","Good condition"],["map","Made for Ubud & around"]],
+  crK:"Car with driver", crH:"Your driver, your pace", crP:"Short trips, shopping, dinner out or nearby sights — the car waits while you enjoy.", perHourMin:"/ hour · min 2 hours",
+  crHours:"Hours", crHoursS:"minimum 2", hourU:"hour|hours", crTot:"Total", crAddL:"Add car with driver",
+  tpH:"Private tour", tpPrice:"price on request", tpP:"Full or half day with your own driver. Tell us where you'd like to go and we'll plan it.", tpLen:[["full","Full day"],["half","Half day"]],
+  tpPlaces:["Ubud & surroundings","Rice terraces","Waterfalls","Temples","Beaches","Tegalalang","Tegenungan","Ulun Danu Beratan","Uluwatu","Melasti"], tpWhere:"Where would you like to go?", tpAddL:"Ask for a private tour",
+  crPerks:[["users","Spacious & comfortable"],["snow","Air conditioning"],["bag","Great for families & groups"],["route","Flexible itinerary"]],
+  spK:"Spa & wellness", spH:"The spa comes to you", spP:"A therapist brings everything to your room. Pick a treatment and how long you'd like it.", andUp:"and up",
+  spMenu:"Massages", spPick:"choose the length", spNails:"Pedi / Manicure", spNote:"Prices include tax, service and transport fee.",
+  bfK:"Floating breakfast", bfH:"Breakfast, served on the water", bfP:"A delicious start in a beautiful place — simple, fresh, beautifully served on a floating tray.", fromL:"from", perCouple:"/ couple",
+  bfTime:"Serving time", bfOrder:"order the day before", bfTimes:["07:30","08:30","09:30","10:30"], bfAddL:"Add floating breakfast",
+  moTitle:"More services" },
+ ru:{ heroBig:"Отдых в джунглях — <em>всё в одном месте.</em>", pills:["Wi-Fi в одно касание","Трансфер из аэропорта","Спа в номере","Консьерж в WhatsApp"], scrollCue:"Листайте",
+  svIntro2:"Нажимайте «Добавить» на всём, что нравится, — и отправьте список консьержу одним сообщением в WhatsApp.",
+  tTransfer:"Трансфер", tScooter:"Скутеры", tCar:"Машина и туры", tSpa:"Спа", tBreakfast:"Завтрак", tMore:"Ещё",
+  trK:"Трансфер из аэропорта", trH:"Прилетели — и поехали.", trP:"Прямо из Нгурах-Рай в Norke Villa. Водитель встретит в зоне прилёта и поможет с багажом.", perCarOW:"за машину · в одну сторону", trDrive:"± 1,5–2 часа",
+  trPerks:[["car","Индивидуальный, до двери"],["bag","Просторно, багаж поместится"],["user","Приветливый местный водитель"],["shield","Спокойный приезд без хлопот"]],
+  trDir:[["arr","В Norke Villa"],["dep","В аэропорт"],["both","Туда-обратно"]], trAddL:"Добавить трансфер", trVehicle:"Toyota Xenia / Toyota Rush или аналог, с кондиционером.",
+  fDate:"Дата", fTime:"Время", fFlight:"Рейс", fGuests:"Гостей", orSimilar:"или аналог",
+  scH:"Аренда скутера", perDayL:"цена за день", scP:"Катайтесь по Убуду в своём темпе. Шлем в комплекте, скутеры регулярно обслуживаются.", scDays:"Дней аренды", scDaysS:"цены пересчитаются ниже", dayU:"день|дн.",
+  scPerks:[["helmet","Шлем в комплекте"],["tool","Регулярное ТО"],["shield","Хорошее состояние"],["map","Для Убуда и окрестностей"]],
+  crK:"Машина с водителем", crH:"Ваш водитель, ваш темп", crP:"Короткие поездки, шопинг, ужин в городе или достопримечательности рядом — машина подождёт.", perHourMin:"/ час · от 2 часов",
+  crHours:"Часов", crHoursS:"минимум 2", hourU:"час|ч", crTot:"Итого", crAddL:"Добавить машину с водителем",
+  tpH:"Индивидуальный тур", tpPrice:"цена по запросу", tpP:"Полный или половина дня со своим водителем. Скажите, куда хотите, — спланируем.", tpLen:[["full","Целый день"],["half","Полдня"]],
+  tpPlaces:["Убуд и окрестности","Рисовые террасы","Водопады","Храмы","Пляжи","Тегаллаланг","Тегенунган","Улун Дану Братан","Улувату","Меласти"], tpWhere:"Куда хотите поехать?", tpAddL:"Запросить тур",
+  crPerks:[["users","Просторно и удобно"],["snow","Кондиционер"],["bag","Для семей и компаний"],["route","Гибкий маршрут"]],
+  spK:"Спа и велнес", spH:"Спа приедет к вам", spP:"Мастер привезёт всё необходимое прямо в номер. Выберите процедуру и длительность.", andUp:"и выше",
+  spMenu:"Массажи", spPick:"выберите длительность", spNails:"Педикюр / маникюр", spNote:"В цену входят налог, сервис и транспорт.",
+  bfK:"Плавающий завтрак", bfH:"Завтрак прямо в бассейне", bfP:"Вкусное начало дня в красивом месте: просто, свежо и красиво — на плавающем подносе.", fromL:"от", perCouple:"/ на двоих",
+  bfTime:"Время подачи", bfOrder:"закажите накануне", bfTimes:["07:30","08:30","09:30","10:30"], bfAddL:"Добавить плавающий завтрак",
+  moTitle:"Другие услуги",
+  kAdd:"Добавить", kAdded:"Добавлено", kMyReq:"Мой запрос", kChat:"Консьерж", kSheetT:"Ваш запрос", kSheetSub:"Проверьте список, добавьте детали и отправьте консьержу одним сообщением.",
+  kName:"Ваше имя", kRoom:"Этаж / номер", kNote:"Что-то ещё?", kNoteP:"Даты, время, сколько гостей…", kTotal:"Ориентировочно", kTotalNote:"Итоговую цену подтвердит команда", kSend:"Отправить в WhatsApp",
+  kEmpty:"Список пуст — нажмите «Добавить» у любой услуги.", kSent:"Открываем WhatsApp…", kRemoved:"Убрано", kAddedT:"Добавлено в запрос", kOnReq:"по запросу" },
+ id:{ heroBig:"Menginap di hutan, <em>semua di satu tempat.</em>", pills:["Wi-Fi sekali ketuk","Antar-jemput bandara","Spa di kamar","Concierge via WhatsApp"], scrollCue:"Gulir",
+  svIntro2:"Ketuk “Tambah” pada layanan yang Anda suka — lalu kirim daftarnya ke concierge dalam satu pesan WhatsApp.",
+  tTransfer:"Transfer", tScooter:"Skuter", tCar:"Mobil & tur", tSpa:"Spa", tBreakfast:"Sarapan", tMore:"Lainnya",
+  trK:"Antar-jemput bandara", trH:"Mendarat, senyum, berangkat.", trP:"Langsung dari Ngurah Rai ke Norke Villa. Sopir menunggu di kedatangan dan membantu bagasi.", perCarOW:"per mobil · sekali jalan", trDrive:"± 1,5–2 jam",
+  trPerks:[["car","Transfer pribadi sampai vila"],["bag","Luas, muat bagasi"],["user","Sopir lokal yang ramah"],["shield","Aman & tanpa repot"]],
+  trDir:[["arr","Ke Norke Villa"],["dep","Ke bandara"],["both","Pulang-pergi"]], trAddL:"Tambah transfer", trVehicle:"Toyota Xenia / Toyota Rush atau sejenis, ber-AC.",
+  fDate:"Tanggal", fTime:"Jam", fFlight:"No. penerbangan", fGuests:"Tamu", orSimilar:"atau sejenis",
+  scH:"Sewa skuter", perDayL:"harga per hari", scP:"Jelajahi Ubud dengan bebas. Helm termasuk, skuter rutin diservis.", scDays:"Hari sewa", scDaysS:"harga diperbarui di bawah", dayU:"hari|hari",
+  scPerks:[["helmet","Termasuk helm"],["tool","Rutin diservis"],["shield","Kondisi baik"],["map","Cocok untuk Ubud & sekitarnya"]],
+  crK:"Mobil dengan sopir", crH:"Sopir Anda, sesuai ritme Anda", crP:"Perjalanan singkat, belanja, makan malam atau tempat wisata terdekat.", perHourMin:"/ jam · min 2 jam",
+  crHours:"Jam", crHoursS:"minimal 2", hourU:"jam|jam", crTot:"Total", crAddL:"Tambah mobil + sopir",
+  tpH:"Tur pribadi", tpPrice:"harga sesuai permintaan", tpP:"Seharian atau setengah hari dengan sopir pribadi. Beri tahu tujuan Anda.", tpLen:[["full","Seharian"],["half","Setengah hari"]],
+  tpPlaces:["Ubud & sekitarnya","Sawah terasering","Air terjun","Pura","Pantai","Tegalalang","Tegenungan","Ulun Danu Beratan","Uluwatu","Melasti"], tpWhere:"Mau ke mana?", tpAddL:"Minta tur pribadi",
+  crPerks:[["users","Luas & nyaman"],["snow","Ber-AC"],["bag","Cocok untuk keluarga & grup"],["route","Rute fleksibel"]],
+  spK:"Spa & wellness", spH:"Spa datang ke kamar Anda", spP:"Terapis membawa semua perlengkapan. Pilih perawatan dan durasinya.", andUp:"ke atas",
+  spMenu:"Pijat", spPick:"pilih durasi", spNails:"Pedikur / Manikur", spNote:"Harga sudah termasuk pajak, layanan & transportasi.",
+  bfK:"Floating breakfast", bfH:"Sarapan di atas air", bfP:"Awal hari yang lezat di tempat indah — segar dan cantik di atas nampan terapung.", fromL:"mulai", perCouple:"/ pasangan",
+  bfTime:"Jam penyajian", bfOrder:"pesan sehari sebelumnya", bfTimes:["07:30","08:30","09:30","10:30"], bfAddL:"Tambah floating breakfast",
+  moTitle:"Layanan lain",
+  kAdd:"Tambah", kAdded:"Ditambah", kMyReq:"Permintaan saya", kChat:"Concierge", kSheetT:"Permintaan Anda", kSheetSub:"Periksa daftar, tambahkan detail dan kirim ke concierge dalam satu pesan.",
+  kName:"Nama Anda", kRoom:"Lantai / kamar", kNote:"Ada lagi?", kNoteP:"Tanggal, jam, jumlah tamu…", kTotal:"Perkiraan total", kTotalNote:"Harga final dikonfirmasi tim", kSend:"Kirim via WhatsApp",
+  kEmpty:"Daftar kosong — ketuk “Tambah” pada layanan mana pun.", kSent:"Membuka WhatsApp…", kRemoved:"Dihapus", kAddedT:"Ditambahkan", kOnReq:"sesuai permintaan" },
+ zh:{ heroBig:"丛林假期，<em>一站搞定。</em>", pills:["一键连 Wi-Fi","机场接送","房内水疗","WhatsApp 礼宾"], scrollCue:"向下滑动",
+  svIntro2:"点按“添加”选择喜欢的服务，再通过一条 WhatsApp 消息发给礼宾。",
+  tTransfer:"接送机", tScooter:"摩托车", tCar:"包车与游览", tSpa:"水疗", tBreakfast:"早餐", tMore:"更多",
+  trK:"机场接送", trH:"落地即出发。", trP:"从努拉莱机场直达 Norke Villa。司机在到达口举牌迎接并协助搬运行李。", perCarOW:"每车 · 单程", trDrive:"约 1.5–2 小时",
+  trPerks:[["car","专车直达门口"],["bag","空间宽敞，行李无忧"],["user","友善的本地司机"],["shield","安全省心"]],
+  trDir:[["arr","前往 Norke Villa"],["dep","前往机场"],["both","往返"]], trAddL:"添加接送", trVehicle:"Toyota Xenia / Toyota Rush 或同级，配空调。",
+  fDate:"日期", fTime:"时间", fFlight:"航班号", fGuests:"人数", orSimilar:"或同级",
+  scH:"摩托车租赁", perDayL:"每日价格", scP:"按自己的节奏畅游乌布。含头盔，车辆定期保养。", scDays:"租赁天数", scDaysS:"下方价格自动更新", dayU:"天|天",
+  scPerks:[["helmet","含头盔"],["tool","定期保养"],["shield","车况良好"],["map","适合乌布及周边"]],
+  crK:"包车含司机", crH:"专属司机，随心出行", crP:"短途出行、购物、外出晚餐或附近景点，车辆全程等候。", perHourMin:"/ 小时 · 至少 2 小时",
+  crHours:"小时", crHoursS:"至少 2 小时", hourU:"小时|小时", crTot:"合计", crAddL:"添加包车",
+  tpH:"私人游览", tpPrice:"按需报价", tpP:"全天或半天专属司机。告诉我们想去哪里，我们来安排。", tpLen:[["full","全天"],["half","半天"]],
+  tpPlaces:["乌布及周边","梯田","瀑布","寺庙","海滩","德格拉朗","德格农安","水神庙","乌鲁瓦图","美拉斯蒂"], tpWhere:"想去哪里？", tpAddL:"咨询私人游览",
+  crPerks:[["users","宽敞舒适"],["snow","空调"],["bag","适合家庭与团体"],["route","行程灵活"]],
+  spK:"水疗与养生", spH:"水疗送到房间", spP:"理疗师携带全部用品上门。选择项目与时长即可。", andUp:"起",
+  spMenu:"按摩", spPick:"选择时长", spNails:"修脚 / 修甲", spNote:"价格已含税费、服务费及交通费。",
+  bfK:"漂浮早餐", bfH:"泳池里的早餐", bfP:"在美景中开启美味一天——简单、新鲜，盛放在漂浮托盘上。", fromL:"起价", perCouple:"/ 两人",
+  bfTime:"用餐时间", bfOrder:"请提前一天预订", bfTimes:["07:30","08:30","09:30","10:30"], bfAddL:"添加漂浮早餐",
+  moTitle:"更多服务",
+  kAdd:"添加", kAdded:"已添加", kMyReq:"我的预订", kChat:"礼宾", kSheetT:"您的预订", kSheetSub:"确认清单、补充细节，一条消息发给礼宾。",
+  kName:"您的姓名", kRoom:"楼层 / 房号", kNote:"其他需求？", kNoteP:"日期、时间、人数…", kTotal:"预估合计", kTotalNote:"最终价格由团队确认", kSend:"通过 WhatsApp 发送",
+  kEmpty:"清单为空——点按任一服务的“添加”。", kSent:"正在打开 WhatsApp…", kRemoved:"已移除", kAddedT:"已加入预订", kOnReq:"按需报价" }
+};
+Object.keys(HUB_I18N).forEach(l => Object.assign(I18N[l], HUB_I18N[l]));
+
+/* ============================================================
+   Guest-app layer for Norke Villa (new UI texts + views).
+   ============================================================ */
+const APP_I18N = {
+ en:{ ctaExplore:"Explore services", stayK:"You're staying at", wifiS:"2 networks · tap for password", concierge:"Concierge", concHours:"09:00–23:00", conciergeS:"Aprilya · WhatsApp",
+  needsK:"Concierge", needsH:"Everything for <em>your stay</em>", needsLede:"Grouped by what you need. Add anything you like — then send one request to the concierge on WhatsApp.",
+  services:"services", seeAll:"See all", exH:"Around <em>Ubud</em>", infoH:"Handy <em>details</em>", teamK:"Here for you", teamH:"Your <em>team</em>",
+  gMove:"Arrival & getting around", gMoveS:"Airport transfer · scooters · car with driver",
+  gSpa:"Spa & beauty", gSpaS:"14 massages and nail care — in your room",
+  gFood:"Food & drinks", gFoodS:"Floating breakfast, in-villa menu, private chef",
+  gTours:"Tours & adventures", gToursS:"ATV, buggy, rafting, Batur sunrise, Nusa Penida", adMain:"Ride & raft", adSub:"Get out of the pool for a day. We book everything and can add a transfer.", perPax:"per person", guestsU:"guest|guests", visitUs:"Visit us",
+  gCele:"Celebrations", gCeleS:"Birthday, honeymoon & surprise setups",
+  gHome:"Home & housekeeping", gHomeS:"Cleaning, laundry, groceries, house guide",
+  nMenu:"In-villa menu", nDining:"Dinners & chef", nAct:"More activities", nDecor:"Setups & decor", nOther:"Flowers & gifts", nExtras:"Laundry & shopping", nExtend:"Longer stay",
+  iWifi:"Wi-Fi & location", iWifiS:"Network, password, map", iHouseS:"AirPlay, curtains, AC, safe, pool", iKnowS:"Check-out, water, house notes", iHelpS:"112, clinic, supermarket", iWildS:"Who's who in the jungle", iPhrS:"Say it like a local", iPayS:"DANA / QRIS, tips",
+  total:"Total", book:"Book", address:"Location", exploreAll:"Explore Ubud" },
+ ru:{ ctaExplore:"Смотреть услуги", stayK:"Вы живёте в", wifiS:"2 сети · нажмите — пароль", concierge:"Консьерж", concHours:"09:00–23:00", conciergeS:"Aprilya · WhatsApp",
+  needsK:"Консьерж", needsH:"Всё для <em>вашего отдыха</em>", needsLede:"Собрали по потребностям. Добавляйте что нравится — и отправьте один запрос консьержу в WhatsApp.",
+  services:"услуг", seeAll:"Все", exH:"Вокруг <em>Убуда</em>", infoH:"Важные <em>детали</em>", teamK:"Мы рядом", teamH:"Ваша <em>команда</em>",
+  gMove:"Трансфер и передвижение", gMoveS:"Из аэропорта · скутеры · машина с водителем",
+  gSpa:"Спа и красота", gSpaS:"14 видов массажа и уход за ногтями — в номере",
+  gFood:"Еда и напитки", gFoodS:"Плавающий завтрак, меню в номер, личный шеф",
+  gTours:"Туры и приключения", gToursS:"ATV, багги, рафтинг, рассвет на Батуре, Нуса-Пенида", adMain:"Драйв и сплав", adSub:"Выберитесь из бассейна на денёк. Забронируем всё и при желании трансфер.", perPax:"за человека", guestsU:"гость|гостей", visitUs:"Наш сайт",
+  gCele:"Праздники", gCeleS:"День рождения, медовый месяц, сюрпризы",
+  gHome:"Дом и уборка", gHomeS:"Уборка, прачечная, продукты, инструкции",
+  nMenu:"Меню в номер", nDining:"Ужины и шеф", nAct:"Ещё активности", nDecor:"Оформление", nOther:"Цветы и подарки", nExtras:"Прачечная и покупки", nExtend:"Продление",
+  iWifi:"Wi-Fi и адрес", iWifiS:"Сеть, пароль, карта", iHouseS:"AirPlay, шторы, кондиционер, сейф, бассейн", iKnowS:"Выезд, вода, правила дома", iHelpS:"112, клиника, супермаркет", iWildS:"Кто живёт в джунглях", iPhrS:"Говорите как местные", iPayS:"DANA / QRIS, чаевые",
+  total:"Итого", book:"Заказать", address:"Адрес", exploreAll:"Открыть Убуд" },
+ id:{ ctaExplore:"Lihat layanan", stayK:"Anda menginap di", wifiS:"2 jaringan · ketuk untuk kata sandi", concierge:"Concierge", concHours:"09:00–23:00", conciergeS:"Aprilya · WhatsApp",
+  needsK:"Concierge", needsH:"Semua untuk <em>masa inap Anda</em>", needsLede:"Dikelompokkan sesuai kebutuhan. Tambahkan yang Anda suka — lalu kirim satu permintaan ke concierge via WhatsApp.",
+  services:"layanan", seeAll:"Semua", exH:"Sekitar <em>Ubud</em>", infoH:"Info <em>penting</em>", teamK:"Siap membantu", teamH:"Tim <em>Anda</em>",
+  gMove:"Kedatangan & transportasi", gMoveS:"Transfer bandara · skuter · mobil + sopir",
+  gSpa:"Spa & kecantikan", gSpaS:"14 jenis pijat & perawatan kuku — di kamar",
+  gFood:"Makan & minum", gFoodS:"Floating breakfast, menu kamar, private chef",
+  gTours:"Tur & petualangan", gToursS:"ATV, buggy, rafting, sunrise Batur, Nusa Penida", adMain:"Berkendara & rafting", adSub:"Keluar dari kolam sehari. Kami pesankan semuanya, bisa sekalian transfer.", perPax:"per orang", guestsU:"tamu|tamu", visitUs:"Kunjungi kami",
+  gCele:"Perayaan", gCeleS:"Ulang tahun, bulan madu & kejutan",
+  gHome:"Rumah & kebersihan", gHomeS:"Kebersihan, laundry, belanja, panduan unit",
+  nMenu:"Menu kamar", nDining:"Makan malam & chef", nAct:"Aktivitas lain", nDecor:"Dekorasi", nOther:"Bunga & hadiah", nExtras:"Laundry & belanja", nExtend:"Perpanjang",
+  iWifi:"Wi-Fi & lokasi", iWifiS:"Jaringan, kata sandi, peta", iHouseS:"AirPlay, tirai, AC, brankas, kolam", iKnowS:"Check-out, air, aturan", iHelpS:"112, klinik, supermarket", iWildS:"Penghuni hutan", iPhrS:"Bicara seperti warga lokal", iPayS:"DANA / QRIS, tip",
+  total:"Total", book:"Pesan", address:"Lokasi", exploreAll:"Jelajahi Ubud" },
+ zh:{ ctaExplore:"浏览服务", stayK:"您入住的是", wifiS:"2 个网络 · 点按查看密码", concierge:"礼宾", concHours:"09:00–23:00", conciergeS:"Aprilya · WhatsApp",
+  needsK:"礼宾服务", needsH:"入住所需，<em>一应俱全</em>", needsLede:"按需求分类。添加喜欢的服务，再通过一条 WhatsApp 消息发给礼宾。",
+  services:"项服务", seeAll:"全部", exH:"乌布<em>周边</em>", infoH:"实用<em>信息</em>", teamK:"随时为您服务", teamH:"您的<em>团队</em>",
+  gMove:"抵达与出行", gMoveS:"机场接送 · 摩托车 · 包车",
+  gSpa:"水疗与美容", gSpaS:"14 种按摩与美甲——房内服务",
+  gFood:"餐饮", gFoodS:"漂浮早餐、客房菜单、私人厨师",
+  gTours:"游览与探险", gToursS:"全地形车、越野车、漂流、巴图尔日出、努沙佩尼达", adMain:"越野与漂流", adSub:"离开泳池玩一天。我们全程代订，也可加订接送。", perPax:"每人", guestsU:"人|人", visitUs:"访问我们",
+  gCele:"庆祝布置", gCeleS:"生日、蜜月与惊喜布置",
+  gHome:"居家与清洁", gHomeS:"清洁、洗衣、代购、使用指南",
+  nMenu:"客房菜单", nDining:"晚餐与厨师", nAct:"更多活动", nDecor:"布置", nOther:"鲜花与礼物", nExtras:"洗衣与代购", nExtend:"续住",
+  iWifi:"Wi-Fi 与位置", iWifiS:"网络、密码、地图", iHouseS:"AirPlay、窗帘、空调、保险箱、泳池", iKnowS:"退房、饮用水、须知", iHelpS:"112、诊所、超市", iWildS:"丛林里的邻居", iPhrS:"像本地人一样说", iPayS:"DANA / QRIS、小费",
+  total:"合计", book:"预订", address:"位置", exploreAll:"探索乌布" }
+};
+Object.keys(APP_I18N).forEach(l => Object.assign(I18N[l], APP_I18N[l]));
+Object.assign(I18N, {
+  uk:{ wFloorNote:"Дві мережі — підключайтеся до будь-якої. Натисніть на пароль, щоб показати й скопіювати.", wifiS:"2 мережі · натисніть — пароль" },
+  fr:{ wFloorNote:"Deux réseaux — connectez-vous à l'un ou l'autre. Touchez le mot de passe pour l'afficher et le copier.", wifiS:"2 réseaux · touchez pour le mot de passe" },
+  ko:{ wFloorNote:"네트워크 2개 중 아무 곳에나 연결하세요. 비밀번호를 누르면 표시되고 복사됩니다.", wifiS:"네트워크 2개 · 눌러서 비밀번호" }
+});
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const {esc, ic, h} = Guide; const fmt = Kit.fmt;
+let lang = "en";
+try { lang = localStorage.getItem("jvLang2") || "en"; } catch(e){}  // English by default
+const LANGS = [["en","English","EN"],["ru","Русский","RU"],["uk","Українська","UK"],["fr","Français","FR"],["id","Bahasa Indonesia","ID"],["zh","中文","中文"],["ko","한국어","한국어"]];
+const V = CONFIG.villa.name;
+const t = v => (v && typeof v === "object" && !Array.isArray(v)) ? (v[lang] || Guide.txDeep(lang, v.en) || Object.values(v)[0]) : Guide.tx(lang, v);
+const L = k => { const v = I18N[lang] && I18N[lang][k]; return v != null ? v : (I18N.en[k] != null ? Guide.txDeep(lang, I18N.en[k]) : k); };
+const fill = (s, x = "") => String(s).replace(/\{v\}/g, V).replace(/\{x\}/g, x);
+const wa = (phone, msg) => Kit.wa(phone, msg);
+const waMsg = (phone, key, x = "") => wa(phone, fill(L(key), x));
+const PH = CONFIG.staff.concierge.phone;
+const hunit = (n, u) => { const p = String(u).split("|"); return `${n} ${n === 1 ? p[0] : p[1]}`; };
+const form = {}; document.addEventListener("input", e => { if (e.target.id) form[e.target.id] = e.target.value; }, true);
+const ADV = [
+  {id:"atv", name:"ATV Ride", img:"adv_atv", desc:{en:"Jungle trails, rice fields and plenty of mud."}, opts:[["1",950000,{en:"1 rider"}],["2",1300000,{en:"2 on one ATV"}]]},
+  {id:"utv", name:"UTV Buggy Adventure", img:"adv_utv", desc:{en:"Off-road buggy through the countryside."}, opts:[["1",1600000,{en:"1 rider"}],["2",2000000,{en:"2 in one buggy"}]]},
+  {id:"tubing", name:"River Tubing", img:"adv_tubing", desc:{en:"Float, relax and enjoy the river."}, per:800000}
+];
+const HS = { atv:"1", utv:"1", g_tubing:2, trDir:"arr", days:3, hours:3, tpLen:"full", bfAt:1, spa:{}, hkDay:1, hkTime:0 };
+HUB_DATA.spa.forEach(s => HS.spa[s.id] = 0);
+const svcCat = en => (CONFIG.services.find(g => g.cat.en === en) || {items:[]}).items;
+const svcRows = items => h.rows(items.map(it => ({ id:"svc-" + it.t, img:it.img, icon:"sparkle", name:t(it.t), meta:(/^On request$/i.test(it.p) ? L("svOnReq") : Guide.price(lang, it.p)) + (it.cond ? " " + Guide.price(lang, it.cond) : "") })));
+
+/* ---------- basket items (messages in English for the team) ---------- */
+Kit.item("transfer", () => {
+  const bits = [{arr:"Airport → Norke Villa", dep:"Norke Villa → Airport", both:"Both ways"}[HS.trDir]];
+  const d = form.trDate || "", tm = form.trTime || "", fl = (form.trFlight || "").trim(), px = form.trPax || "";
+  if (d || tm) bits.push([d, tm].filter(Boolean).join(" ")); if (fl) bits.push("flight " + fl); if (px) bits.push(px + " pax");
+  return { t:"Airport transfer", m:bits.join(" · "), amt:HUB_DATA.transfer * (HS.trDir === "both" ? 2 : 1) };
+});
+HUB_DATA.scooters.forEach(b => Kit.item("sc-" + b.id, () => ({ t:`${b.name} ${b.cc}cc`, m:`${HS.days} day${HS.days > 1 ? "s" : ""} · helmet included`, amt:b.price * HS.days })));
+ADV.forEach(a => Kit.item("adv-" + a.id, () => {
+  if (a.opts){ const o = a.opts.find(o => o[0] === HS[a.id]) || a.opts[0]; return {t:a.name, m:o[2].en, amt:o[1]}; }
+  const n = HS["g_" + a.id]; return {t:a.name, m:`${n} guest${n > 1 ? "s" : ""}`, amt:a.per * n};
+}));
+Kit.item("car-hourly", () => ({ t:"Car with driver", m:`${HS.hours} hours`, amt:HUB_DATA.carHour * HS.hours }));
+Kit.item("private-tour", () => ({ t:`Private tour · ${HS.tpLen === "full" ? "full day" : "half day"}`, m:(form.tpDest || "").trim() || "destination to discuss", amt:null }));
+HUB_DATA.spa.forEach(s => Kit.item("spa-" + s.id, () => { const o = s.o[HS.spa[s.id]] || s.o[0]; return { t:s.n.en, m:`${o[0]} min · in your room`, amt:o[1] }; }));
+HUB_DATA.nails.forEach(n => Kit.item("nail-" + n.id, () => ({ t:n.n.en, m:"in your room", amt:n.p })));
+Kit.item("floating-breakfast", () => ({ t:"Floating Breakfast for 2", m:`serve at ${I18N.en.bfTimes[HS.bfAt]} · from-price`, amt:HUB_DATA.breakfast.price }));
+CONFIG.services.forEach(g => g.items.forEach(it => Kit.item("svc-" + it.t, () => ({ t:it.t, m:it.cond ? it.cond.replace(/^[\/·]\s*/, "") : "", amt:null, lbl:it.p }))));
+CONFIG.menu.forEach(g => g.items.forEach(it => Kit.item("menu-" + it.name, () => ({ t:it.name, m:"pre-order", amt:null, lbl:it.price }))));
+CONFIG.nearby.forEach(c => c.places.forEach(p => Kit.item("tour-" + p.name, () => ({ t:p.name, m:"please arrange", amt:null, lbl:t(p.cost) ? (p.cost.en || p.cost) : null }))));
+
+/* ---------- views ---------- */
+const cover = n => n;
+Guide.views.move = {
+  get title(){ return L("gMove"); }, kicker:"Norke Villa · Ubud", get sub(){ return L("gMoveS"); }, img:"assets/svc/jv_rush2.webp",
+  get nav(){ return [["transfer", L("tTransfer")], ["scooter", L("tScooter")], ["car", L("tCar")]]; },
+  body(){
+    return h.sec("transfer", L("trK"), L("trP"), `
+        <div class="card"><div class="price-b"><b>IDR 550,000</b><span>${esc(L("perCarOW"))}</span></div>
+          <div class="route"><div class="pt">${ic("plane")}Ngurah Rai<br>DPS</div><div class="ln">${esc(L("trDrive"))}</div><div class="pt">${ic("home")}Norke Villa<br>Ubud</div></div></div>
+        ${h.perks(L("trPerks"))}
+        <div class="card">${h.seg("trDir", L("trDir"), HS.trDir)}
+          <div class="k-fields">
+            <label>${esc(L("fDate"))}<input class="k-in" type="date" id="trDate" value="${esc(form.trDate || "")}"></label>
+            <label>${esc(L("fTime"))}<input class="k-in" type="time" id="trTime" value="${esc(form.trTime || "")}"></label>
+            <label>${esc(L("fFlight"))}<input class="k-in" id="trFlight" placeholder="QZ 501" value="${esc(form.trFlight || "")}"></label>
+            <label>${esc(L("fGuests"))}<input class="k-in" type="number" min="1" max="12" inputmode="numeric" id="trPax" value="${esc(form.trPax || "2")}"></label></div>
+          ${h.total("transfer", "")}${h.add("transfer", "big", L("trAddL"))}${h.note(L("trVehicle"))}</div>
+        ${h.cars([["assets/svc/jv_rush.webp","Toyota Rush",L("orSimilar")],["assets/svc/jv_rush2.webp","Toyota Xenia",L("orSimilar")]])}`)
+      + h.sec("scooter", L("scH"), L("scP"), `
+        <div class="card">${h.step("days", HS.days, 1, 30, L("dayU"), L("scDays"), L("scDaysS"))}</div>
+        ${h.prods(HUB_DATA.scooters.map(b => ({ id:"sc-" + b.id, img:`assets/svc/${b.img}.webp`, tag:`${b.cc} CC`, name:b.name, meta:t(b.feats), price:fmt(b.price), unit:"/ " + hunit(1, L("dayU")).replace(/^1 /, ""), totId:b.id })))}
+        ${h.perks(L("scPerks"))}${h.warn(L("bikeWarn"))}`)
+      + h.sec("car", L("crH"), L("crP"), `
+        <div class="card"><div class="price-b"><b>IDR 200,000</b><span>${esc(L("perHourMin"))}</span></div>
+          <div style="margin-top:14px">${h.step("hours", HS.hours, HUB_DATA.carMinHours, 12, L("hourU"), L("crHours"), L("crHoursS"))}</div>
+          ${h.total("car-hourly", L("crTot"))}${h.add("car-hourly", "big", L("crAddL"))}</div>
+        <div class="card"><div class="price-b"><b style="font-size:1.3rem">${esc(L("tpH"))}</b><span>· ${esc(L("tpPrice"))}</span></div>
+          <p class="note" style="margin:6px 0 12px">${esc(L("tpP"))}</p>
+          ${h.seg("tpLen", L("tpLen"), HS.tpLen)}${h.chips(L("tpPlaces"))}
+          <div class="k-fields"><label class="full">${esc(L("tpWhere"))}<input class="k-in" id="tpDest" value="${esc(form.tpDest || "")}"></label></div>
+          <div style="margin-top:12px">${h.add("private-tour", "w", L("tpAddL"))}</div></div>
+        ${h.perks(L("crPerks"))}`);
+  }
+};
+Guide.views.spa = {
+  get title(){ return L("gSpa"); }, get kicker(){ return L("spK"); }, get sub(){ return L("spP"); }, img:"assets/svc/spa_massage.webp",
+  get nav(){ return [["massage", L("spMenu")], ["nails", L("spNails")]]; },
+  body(){
+    return h.sec("massage", L("spMenu"), L("spPick"), h.rows(HUB_DATA.spa.map(s => ({ id:"spa-" + s.id, icon:s.ic, name:t(s.n), priceOf:"spa-" + s.id,
+        opts: s.o.length > 1 ? { group:"spa-" + s.id, list:s.o.map((o, i) => [i, o[0] + "′"]), sel:HS.spa[s.id] } : null, meta: s.o.length > 1 ? "" : s.o[0][0] + " min" }))))
+      + h.sec("nails", L("spNails"), "", h.rows(HUB_DATA.nails.map(n => ({ id:"nail-" + n.id, icon:"nail", name:t(n.n), price:fmt(n.p) })))) + h.note(L("spNote"));
+  }
+};
+Guide.views.food = {
+  get title(){ return L("gFood"); }, kicker:"Norke Villa", get sub(){ return L("gFoodS"); }, img:"assets/svc/bf_hero.webp",
+  get nav(){ return [["float", L("bfK")], ["menu", L("nMenu")], ["dining", L("nDining")], ["minibar", L("secMinibar")]]; },
+  body(){
+    const dining = svcCat("Food & Dining").filter(it => it.t !== "Floating Breakfast");
+    return h.sec("float", L("bfH"), L("bfP"), `
+        <div class="card"><div class="price-b"><span>${esc(L("fromL"))}</span><b>IDR 759,000</b><span>${esc(L("perCouple"))}</span></div></div>
+        ${h.strip(HUB_DATA.breakfast.menu.map(m => [`assets/svc/${m.img}.webp`, m.n, t(m.d)]))}
+        <div class="card"><div class="k-fields" style="margin-top:0"><label class="full">${esc(L("bfTime"))} · ${esc(L("bfOrder"))}
+          <div class="tchips" data-group="bfAt">${L("bfTimes").map((x, i) => `<button type="button" data-v="${i}" class="${i === HS.bfAt ? "on" : ""}">${x}</button>`).join("")}</div></label></div>
+          <div style="margin-top:14px">${h.add("floating-breakfast", "big", L("bfAddL"))}</div></div>`)
+      + h.sec("menu", L("secMenu"), L("menuIntro"), CONFIG.menu.map(g => h.rows(g.items.map(it => ({ id:"menu-" + it.name, img:it.img, icon:"utensils", name:it.name, meta:t(it.desc), price:Guide.price(lang, it.price) })), t(g.group))).join(""))
+      + h.sec("dining", L("nDining"), "", svcRows(dining))
+      + h.sec("minibar", L("secMinibar"), L("mbCharged"), `<div class="card price-list">${CONFIG.minibar.map(m => { const p = t(m.p); return `<div class="pr"><span>${esc(t(m.n))}</span><b>${/^(complimentary|бесплатно|gratis|免费)$/i.test(p) ? esc(p) : "IDR " + esc(p)}</b></div>`; }).join("")}</div>`);
+  }
+};
+Guide.views.tours = {
+  get title(){ return L("gTours"); }, kicker:"Norke Villa · Ubud", get sub(){ return L("gToursS"); }, img:"assets/img/ubud-tour.jpg",
+  get nav(){ return [["arrange", L("nbTours")], ["ride", L("adMain")], ["more", L("nAct")]]; },
+  body(){
+    const tours = (CONFIG.nearby.find(c => c.key === "tours") || {places:[]}).places;
+    return h.sec("arrange", L("nbTours"), L("svIntro"), h.places(tours.map(p => ({ name:p.name, img:p.img, note:t(p.note), cost:t(p.cost), maps:p.maps, addId:"tour-" + p.name, addLabel:L("book") })), k => L(k === "directions" ? "nbDirections" : k)))
+      + h.sec("ride", L("adMain"), L("adSub"), h.prods(ADV.map(a => ({
+          id:"adv-" + a.id, img:`assets/svc/${a.img}.webp`, cover:true, name:a.name, meta:t(a.desc),
+          extra: a.opts ? `<div class="durs" data-group="${a.id}">${a.opts.map(o => `<button type="button" data-v="${o[0]}" class="${HS[a.id] === o[0] ? "on" : ""}">${esc(t(o[2]))} · ${fmt(o[1])}</button>`).join("")}</div>${h.total("adv-" + a.id, L("total"))}`
+            : `<div style="margin-top:8px">${h.step("g_" + a.id, HS["g_" + a.id], 1, 12, L("guestsU"), fmt(a.per), L("perPax"))}</div>${h.total("adv-" + a.id, L("total"))}`
+        })), true))
+      + h.sec("more", L("nAct"), "", svcRows(svcCat("Tours & Activities")));
+  }
+};
+Guide.views.celebrate = {
+  get title(){ return L("gCele"); }, kicker:"Norke Villa", get sub(){ return L("gCeleS"); }, img:"assets/img/honeymoon-proposal-setup.jpg",
+  get nav(){ return [["decor", L("nDecor")], ["other", L("nOther")]]; },
+  body(){ return h.sec("decor", L("nDecor"), "", svcRows(svcCat("Decorations"))) + h.sec("other", L("nOther"), "", svcRows(svcCat("Other Services").filter(it => /Flower/i.test(it.t)).concat(svcCat("Food & Dining").filter(it => /Romantic/i.test(it.t))))); }
+};
+Guide.views.home = {
+  get title(){ return L("gHome"); }, kicker:"Norke Villa", get sub(){ return L("gHomeS"); }, img:"assets/video/jv_wide.jpg",
+  get nav(){ return [["hk", L("secHouse")], ["extras", L("nExtras")], ["extend", L("nExtend")], ["house", L("secHome")]]; },
+  body(){
+    return h.sec("hk", L("secHouse"), L("hkLead"), `<div class="card"><div class="k-fields" style="margin-top:0">
+        <label class="full">${esc(L("hkWhen"))}${h.seg("hkDay", [[0, L("hkToday")], [1, L("hkTomorrow")]], HS.hkDay)}</label>
+        <label class="full">${esc(L("hkPref"))}${h.seg("hkTime", [[0, L("hkMorning")], [1, L("hkMidday")], [2, L("hkAfternoon")], [3, L("hkAny")]], HS.hkTime)}</label>
+        <label class="full">${esc(L("hkNoteL"))}<textarea class="k-in" id="hkNote" rows="2" placeholder="${esc(L("hkNoteP"))}">${esc(form.hkNote || "")}</textarea></label></div>
+        <button type="button" class="add big" id="hkSend" style="margin-top:14px">${ic("chat")} ${esc(L("hkSend"))}</button>${h.note(L("hkOpens"))}</div>`)
+      + h.sec("extras", L("nExtras"), "", svcRows(svcCat("Other Services").filter(it => !/Flower/i.test(it.t))))
+      + h.sec("extend", L("nExtend"), L("exLead"), `<a class="lbtn dark w" style="min-height:52px" target="_blank" rel="noopener" href="${waMsg(PH, "waExtend")}">${ic("calendar")} ${esc(L("exBtn"))}</a>`)
+      + h.sec("house", L("secHome"), L("homeIntro"), h.acc(CONFIG.smartHome.map(r => ({ e:r.ic, t:t(r.t), body:t(r.body) }))));
+  },
+  after(){ const b = $("#hkSend"); if (b) b.onclick = () => {
+    const DAY = ["Today (if available)", "Tomorrow"], TIME = ["Morning (9-12)", "Midday (12-3)", "Afternoon (3-6)", "Any time"];
+    const dl = [L("hkToday"), L("hkTomorrow")][HS.hkDay], tl = [L("hkMorning"), L("hkMidday"), L("hkAfternoon"), L("hkAny")][HS.hkTime], note = (form.hkNote || "").trim();
+    let msg = `${fill(L("waHi"))}\n${L("hkReq")}\n• ${L("hkW")}: ${dl} (${DAY[HS.hkDay]})\n• ${L("hkT")}: ${tl} (${TIME[HS.hkTime]})`; if (note) msg += `\n• ${L("hkN")}: ${note}`;
+    window.open(wa(CONFIG.staff.housekeeping.phone, msg + `\n${L("hkThanks")}`), "_blank"); }; }
+};
+Guide.views.stay = {
+  title:"Norke Villa", get kicker(){ return L("stayK"); }, get sub(){ return CONFIG.villa.address; }, img:"assets/video/jv_wide.jpg",
+  body(){ return h.sec("wifi", "Wi-Fi", L("wFloorNote"), CONFIG.wifi.networks.map(w => h.wifi([{ l:L("wNetwork"), v:w.name }, { l:L("wPassword"), v:w.pass, mask:true }], k => L(k === "copy" ? "wCopy" : k))).join('<div style="height:10px"></div>'))
+      + h.sec("addr", L("address"), CONFIG.villa.address, `<a class="lbtn dark w" style="min-height:52px" href="${CONFIG.villa.mapsUrl}" target="_blank" rel="noopener">${ic("pin")} ${esc(L("fuBtn"))}</a>`); }
+};
+Guide.views.explore = {
+  get title(){ return L("exploreAll"); }, get kicker(){ return L("chExplore"); }, get sub(){ return L("nbIntro"); }, img:"assets/img/monkey-forest.jpg",
+  get nav(){ return CONFIG.nearby.filter(c => c.key !== "tours").map(c => [c.key, L(NBK[c.key])]); },
+  body(){ return CONFIG.nearby.filter(c => c.key !== "tours").map(c => h.sec(c.key, L(NBK[c.key]), "",
+      h.places([...c.places].sort((a, b) => (b.img ? 1 : 0) - (a.img ? 1 : 0)).map(p => ({ name:p.name, img:p.img, star:p.tag, dist:p.dist, note:t(p.note), cost:t(p.cost), maps:p.maps })), k => L(k === "directions" ? "nbDirections" : k)))).join(""); }
+};
+const NBK = {free:"nbFree", sunset:"nbSunset", wellness:"nbWellness", nightlife:"nbNightlife", eat:"nbEat", essentials:"nbEssentials", tours:"nbTours"};
+Guide.views.house = { get title(){ return L("secHome"); }, kicker:"Norke Villa", get sub(){ return L("homeIntro"); }, img:"assets/svc/jv_jungle.webp",
+  body(){ return h.sec("house", L("secHome"), "", h.acc(CONFIG.smartHome.map(r => ({ e:r.ic, t:t(r.t), body:t(r.body) })))); } };
+Guide.views.know = { get title(){ return L("secKnow"); }, kicker:"Norke Villa", get sub(){ return L("iKnowS"); }, img:"assets/video/jv_wide.jpg",
+  get nav(){ return [["know", L("secKnow")], ["useful", L("secUseful")]]; },
+  body(){ return h.sec("know", L("secKnow"), "", h.acc(CONFIG.goodToKnow.map(r => ({ e:r.ic, t:t(r.t), body:t(r.body) }))))
+      + h.sec("useful", L("secUseful"), "", `<div class="ilist">${CONFIG.useful.map(u => `<a class="irow" href="${u.href}" ${u.href.startsWith("http") ? 'target="_blank" rel="noopener"' : ""}><span class="ic">${ic(u.ic === "cart" ? "cart" : u.ic)}</span><span class="b"><span class="t">${esc(t(u.tt))}</span><br><span class="m">${esc(t(u.dd))}</span></span><span class="ch">${ic("chev")}</span></a>`).join("")}</div>`); } };
+Guide.views.wild = { get title(){ return L("secWild"); }, kicker:"Norke Villa", get sub(){ return L("wlIntro"); }, img:"assets/img/monkey-forest.jpg",
+  body(){ return h.sec("wild", L("secWild"), "", CONFIG.wildlife.map(g => `<div class="wl ${g.tone}"><h4>${g.ic} ${esc(t(g.t))}</h4>${g.items.map(it => `<div class="it"><span>${it.emoji}</span><span>${esc(t(it.text))}</span></div>`).join("")}</div>`).join("")); } };
+Guide.views.phrases = { get title(){ return L("secPhrases"); }, kicker:"Norke Villa", get sub(){ return L("phrasesIntro"); }, img:"assets/img/ubud-tour.jpg",
+  body(){ return h.sec("phr", L("secPhrases"), "", `<div class="card" style="padding:4px 16px">${CONFIG.phrases.map(p => `<div class="phr"><div class="i">${esc(p.id)}<span class="p">${esc(p.pron)}</span></div><div class="m">${esc(t(p.mean))}</div></div>`).join("")}</div>`); } };
+Guide.views.pay = { get title(){ return L("secPayment"); }, kicker:"DANA · QRIS", get sub(){ return L("payIntro"); }, img:"assets/svc/bf_drinks.webp",
+  body(){ const pay = CONFIG.payment || {}; return h.sec("pay", L("secPayment"), "", `<div class="card center"><div class="qr"><img src="${pay.qrImage}" alt="Payment QR (DANA / QRIS)"></div><p style="font-weight:600;margin:14px 0 4px">${esc(L("payScan"))}</p>${h.note(L("payHint"))}${pay.url ? `<a class="lbtn dark" style="margin-top:12px" href="${pay.url}" target="_blank" rel="noopener">${esc(L("payOnline"))}</a>` : ""}</div>`); } };
+
+/* ---------- home ---------- */
+function renderHome(){
+  document.documentElement.lang = lang;
+  $$("[data-i]").forEach(el => el.textContent = L(el.dataset.i));
+  $$("[data-ih]").forEach(el => el.innerHTML = L(el.dataset.ih));
+  Guide.langMenu($("#langs"), LANGS, lang, code => { lang = code; try { localStorage.setItem("jvLang2", lang); } catch(_){} renderHome(); Guide.repaint(); dyn(); });
+  $("#heroSub").textContent = t(CONFIG.villa.tagline);
+  $("#stayCard").innerHTML = `
+    <div class="stay-h"><div class="stay-ph" style="background-image:url('${(CONFIG.gallery || [])[0] || "assets/video/jv_wide.jpg"}'),url('assets/video/jv_wide.jpg')"></div>
+      <div class="b"><div class="k">${esc(L("stayK"))}</div><div class="n">Norke Villa</div><div class="a">${esc(CONFIG.villa.address)}</div></div>
+      <a class="iconbtn" href="${CONFIG.villa.mapsUrl}" target="_blank" rel="noopener" aria-label="${esc(L("fuBtn"))}">${ic("pin")}</a></div>
+    <div class="stay-g">
+      <button type="button" data-view="stay"><span class="l">${ic("wifi")}Wi-Fi</span><span class="v">Norke Villa 1 / 2</span><span class="s">${esc(L("wifiS"))}</span></button>
+      <a href="${waMsg(PH, "waHelp")}" target="_blank" rel="noopener"><span class="l">${ic("chat")}${esc(L("concierge"))}</span><span class="v">${esc(L("concHours"))}</span><span class="s">${esc(L("conciergeS"))}</span></a></div>`;
+  const tiles = [
+    ["move", "gMove", "gMoveS", "assets/svc/jv_rush2.webp", 4, "big"],
+    ["spa", "gSpa", "gSpaS", "assets/svc/spa_massage.webp", HUB_DATA.spa.length + HUB_DATA.nails.length],
+    ["food", "gFood", "gFoodS", "assets/svc/bf_hero.webp", 1 + CONFIG.menu.reduce((s, g) => s + g.items.length, 0) + svcCat("Food & Dining").length - 1],
+    ["tours", "gTours", "gToursS", "assets/img/ubud-tour.jpg", ((CONFIG.nearby.find(c => c.key === "tours") || {places:[]}).places.length) + svcCat("Tours & Activities").length + ADV.length],
+    ["celebrate", "gCele", "gCeleS", "assets/img/honeymoon-proposal-setup.jpg", svcCat("Decorations").length + 2],
+    ["home", "gHome", "gHomeS", "assets/video/jv_wide.jpg", 4, "wide"]
+  ];
+  $("#bento").innerHTML = tiles.map(([id, tt, s, img, n, cls]) => `
+    <button type="button" class="tile rv ${cls || ""}" data-view="${id}" style="background-image:url('${img}')"><span class="bg"></span>
+      <span class="go">${ic("arrow")}</span><span class="in"><span class="c">${n} ${esc(L("services"))}</span><h3>${esc(L(tt))}</h3><p>${esc(L(s))}</p></span></button>`).join("");
+  const feat = CONFIG.nearby.filter(c => c.key !== "tours").flatMap(c => c.places.filter(p => p.img).map(p => [c.key, p])).concat(CONFIG.nearby.filter(c => c.key !== "tours").flatMap(c => c.places.filter(p => !p.img).slice(0, 1).map(p => [c.key, p])));
+  $("#rail").innerHTML = feat.slice(0, 7).map(([k, p], i) => `
+    <button type="button" class="pcard" data-view="explore" data-sub="${k}"><div class="ph ${p.img ? "" : "txt"}" ${p.img ? `style="background-image:url('${p.img}')"` : ""}><span class="tag">${esc(L(NBK[k]))}</span>${p.img ? "" : "0" + (i + 1)}</div><div class="b"><div class="t">${esc(p.name)}</div><div class="m">${esc(t(p.note) || "")}${p.dist ? " · " + esc(p.dist) : ""}</div></div></button>`).join("");
+  $("#infoList").innerHTML = [["wifi","iWifi","iWifiS","stay"],["home","secHome","iHouseS","house"],["book","secKnow","iKnowS","know"],["phone","secUseful","iHelpS","know","useful"],["paw","secWild","iWildS","wild"],["chat","secPhrases","iPhrS","phrases"],["card","secPayment","iPayS","pay"]]
+    .map(([k, tt, s, view, sub]) => `<button type="button" class="irow" data-view="${view}" ${sub ? `data-sub="${sub}"` : ""}><span class="ic">${ic(k)}</span><span class="b"><span class="t">${esc(L(tt))}</span><br><span class="m">${esc(L(s))}</span></span><span class="ch">${ic("chev")}</span></button>`).join("");
+  $("#teamList").innerHTML = [CONFIG.staff.concierge, CONFIG.staff.housekeeping, CONFIG.staff.support].map(s => `
+    <a class="person" target="_blank" rel="noopener" href="${waMsg(s.phone, "waHi")}"><div class="av">${esc(s.name.trim()[0])}</div><div class="b"><div class="n">${esc(s.name)}</div><div class="r">${esc(t(s.role))}</div></div><span class="pill-wa">${Kit.icon.wa.replace('width="20" height="20"', "")} WhatsApp</span></a>`).join("");
+  $("#fbBad").href = waMsg(CONFIG.staff.support.phone, "waReport");
+  $("#fbGood").href = /YOUR-/.test(CONFIG.reviewUrl) ? wa(PH, fill(L("waHi")) + " ★★★★★ ") : CONFIG.reviewUrl;
+  Kit.relabel(); Guide.reveal();
+}
+function dyn(){
+  $$(".k-step").forEach(w => Kit.setStep(w, +w.dataset.val));
+  HUB_DATA.scooters.forEach(b => { const el = document.querySelector(`[data-tot="${b.id}"]`); if (el) el.textContent = HS.days > 1 ? `${hunit(HS.days, L("dayU"))} · ${fmt(b.price * HS.days)}` : ""; });
+  const sum = document.querySelector('[data-sum="transfer"]'); if (sum) sum.textContent = (L("trDir").find(x => x[0] === HS.trDir) || [])[1] || "";
+  Kit.updatePrices(); Kit.sync();
+}
+document.addEventListener("click", e => {
+  const lb = e.target.closest("#langs button");
+  if (lb){ lang = lb.dataset.lang; try { localStorage.setItem("jvLang", lang); } catch(_){} renderHome(); Guide.repaint(); dyn(); }
+});
+document.addEventListener("kpick", e => { const {group, value} = e.detail;
+  if (group === "trDir" || group === "tpLen" || group === "atv" || group === "utv") HS[group] = value; else if (group === "bfAt" || group === "hkDay" || group === "hkTime") HS[group] = +value;
+  else if (group && group.startsWith("spa-")) HS.spa[group.slice(4)] = +value; dyn(); });
+document.addEventListener("kstep", e => { HS[e.detail.name] = e.detail.value; dyn(); });
+document.addEventListener("input", e => { if (/^(tr|tp)/.test(e.target.id)) dyn(); });
+
+Kit.init({ lang:() => lang, L:k => { const v = I18N[lang] && I18N[lang][k]; return v != null ? v : k; }, phone:PH, villa:() => V, chatHref:() => waMsg(PH, "waHelp"), roomField:true });
+Guide.setup({ L:k => L(k === "copied" ? "wCopied" : k), afterRender:dyn });
+Kit.mountDock();
+renderHome();
+Guide.mount();
+Guide.hero($("#top"), { wide:{src:"assets/video/jv_wide.mp4", poster:"assets/video/jv_wide.jpg"}, mobile:{src:"assets/video/jv_m.mp4", poster:"assets/video/jv_wide.jpg"} });
+dyn();
+
+</script>
+</body>
+</html>
